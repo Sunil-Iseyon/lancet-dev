@@ -156,7 +156,7 @@ export default function Navbar() {
               
               <Image
                 src="/logo.png"
-                alt="Lancet Logo"
+                alt="Lancet Software India logo for business intelligence and data analytics consulting"
                 width={120}
                 height={120}
               />

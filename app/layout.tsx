@@ -7,6 +7,7 @@ import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import SmoothScrollProvider from "@/components/smooth-scroll-provider"
+import SiteEvidenceSection from "@/components/SiteEvidenceSection"
 
 const _Sansation = Sansation({ subsets: ["latin"], weight: ["400", "700"] })
 const _Ubuntu = Ubuntu({ subsets: ["latin"], weight: ["300", "400", "500", "700"] })
@@ -132,6 +133,51 @@ export default function RootLayout({
     }
   };
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Lancet Software India",
+    "url": "https://www.lancetindia.com",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lancet Software India",
+      "url": "https://www.lancetindia.com"
+    },
+    "inLanguage": "en"
+  };
+
+  const webpageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Lancet Software India",
+    "url": "https://www.lancetindia.com",
+    "datePublished": "2026-02-13",
+    "dateModified": "2026-02-13",
+    "author": {
+      "@type": "Organization",
+      "name": "Lancet Software India",
+      "sameAs": ["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lancet Software India",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.lancetindia.com/triangle.png"
+      }
+    },
+    "inLanguage": "en"
+  };
+
+  const terminologySchema = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Business Intelligence",
+    "alternateName": ["BI", "Analytics Intelligence"],
+    "description": "Business intelligence is the practice of transforming operational and historical data into insights for decision making.",
+    "inDefinedTermSet": "https://www.lancetindia.com"
+  };
+
   return (
     <html lang="en">
       <head>
@@ -140,6 +186,18 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(terminologySchema) }}
         />
       </head>
       <body className={`antialiased ${_Ubuntu.className}`}>
@@ -157,6 +215,7 @@ export default function RootLayout({
         <Navbar />
         <SmoothScrollProvider>
           {children}
+          <SiteEvidenceSection />
           <Analytics />
           <Footer />
         </SmoothScrollProvider>

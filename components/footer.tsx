@@ -55,7 +55,7 @@ export default function Footer() {
             <Link href="/">
               <Image
                 src="/lancet-logo-white.png"
-                alt="Lancet Logo"
+                alt="White Lancet Software India logo shown in the company footer"
                 width={170}
                 height={170}
                 priority

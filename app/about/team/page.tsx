@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import { ArticleSchema, FAQSchema } from "@/components/StructuredData"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -22,9 +23,24 @@ export default function AboutPage() {
   const missionInView = useInView(missionRef, { once: true })
   const valuesInView = useInView(valuesRef, { once: true })
   const teamInView = useInView(teamRef, { once: true })
+  const pageUrl = "https://www.lancetindia.com/about/team"
+  const faqItems = [
+    {
+      question: "What expertise does the Lancet team provide?",
+      answer: "The team provides expertise across business intelligence, data engineering, dashboard development, and enterprise analytics consulting.",
+    },
+    {
+      question: "Does Lancet leadership support strategic BI roadmaps?",
+      answer: "Yes. Leadership and senior consultants support roadmap planning, governance setup, and phased enterprise rollout.",
+    },
+    {
+      question: "How does Lancet maintain delivery quality?",
+      answer: "Lancet applies structured delivery standards, peer reviews, and performance monitoring across implementations.",
+    },
+  ]
 
   return (
-    <div className="min-h-screen pt-20 pb-12">
+    <main className="min-h-screen pt-20 pb-12" role="main" aria-label="Team page content">
       <div className="mx-auto">
 
         {/* ================= HEADER ================= */}
@@ -35,12 +51,13 @@ export default function AboutPage() {
           animate={headerInView ? "visible" : "hidden"}
           className="text-center space-y-4"
         >
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">
             About Lancet
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Transforming data into actionable insights since 2010
+            Organizations with strong analytics leadership are more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey</a>). Lancet Software India has delivered BI and data programs since 2010.
           </p>
+          <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
         </motion.div>
 
         {/* ================= MISSION ================= */}
@@ -57,7 +74,7 @@ export default function AboutPage() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               We believe that data is the foundation of modern business success. Our mission is to empower organizations
               of all sizes with cutting-edge business intelligence solutions that transform raw data into strategic
-              advantages.
+              advantages. Data quality and governance are central to this mission (<a className="text-primary hover:underline" href="https://www.nist.gov/publications/data-quality-foundations-ai-and-analytics" target="_blank" rel="nofollow noopener">NIST guidance</a>).
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Since our inception in 2010, we've been dedicated to helping businesses make smarter decisions through
@@ -79,7 +96,7 @@ export default function AboutPage() {
   <div className="space-y-4">
     {/* Item 1 – Sky */}
     <div className="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all duration-300 group/item">
-      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover/item:bg-primary/20 transition-colors">
+      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover/item:bg-primary/20 transition-colors">
         <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
@@ -92,7 +109,7 @@ export default function AboutPage() {
 
     {/* Item 2 – Yellow */}
     <div className="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-yellow-500/50 transition-all duration-300 group/item">
-      <div className="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0 group-hover/item:bg-yellow-500/20 transition-colors">
+      <div className="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center shrink-0 group-hover/item:bg-yellow-500/20 transition-colors">
         <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
@@ -105,7 +122,7 @@ export default function AboutPage() {
 
     {/* Item 3 – Sky */}
     <div className="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all duration-300 group/item">
-      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover/item:bg-primary/20 transition-colors">
+      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover/item:bg-primary/20 transition-colors">
         <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
@@ -118,7 +135,7 @@ export default function AboutPage() {
 
     {/* Item 4 – Yellow */}
     <div className="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-yellow-500/50 transition-all duration-300 group/item">
-      <div className="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0 group-hover/item:bg-yellow-500/20 transition-colors">
+      <div className="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center shrink-0 group-hover/item:bg-yellow-500/20 transition-colors">
         <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
@@ -133,6 +150,12 @@ export default function AboutPage() {
 
           </div>
         </motion.div>
+        <div className="px-4 md:px-28 mt-8">
+          <blockquote className="border-l-4 border-primary pl-4 text-muted-foreground">
+            <p>"High-quality analytics programs combine domain expertise, governance, and continuous optimization."</p>
+            <footer>— Industry best-practice perspective</footer>
+          </blockquote>
+        </div>
         <motion.section
           ref={valuesRef}
           initial="hidden"
@@ -182,13 +205,13 @@ export default function AboutPage() {
           className="mt-20 px-4"
         >
           
-          <div className="relative mt-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-3xl p-6 md:p-12 shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+          <div className="relative mt-8 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 rounded-3xl p-6 md:p-12 shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
 
 
             {/* Team Member 1 */}
             <div className="text-center group relative z-10">
               <div className="relative mb-4">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src="/chandan.png"
                   alt="Chandan"
@@ -196,7 +219,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200/50 dark:border-slate-700/50 group-hover:border-primary/50 transition-all duration-300">
-                <h3 className="text-xl font-bold mb-1 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+                <h3 className="text-xl font-bold mb-1 bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
                   Chandan Pandey
                 </h3>
                 <p className="text-primary text-sm font-semibold mb-2">Managing Director</p>
@@ -211,13 +234,13 @@ export default function AboutPage() {
                   <div className="inline-block mb-3 md:mb-4 px-3 md:px-4 py-1.5 md:py-2 bg-primary/10 rounded-full">
                     <span className="text-xs md:text-sm font-semibold text-primary">Leadership Team</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-2 bg-linear-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
                     Our Team
                   </h2>
                 </div>
 
                 {/* Divider */}
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-700 to-transparent"></div>
+                <div className="w-full h-px bg-linear-to-r from-transparent via-slate-200 dark:via-slate-700 to-transparent"></div>
 
                 {/* Bottom section - text aligned */}
                 <div className="px-6 md:px-8 pt-4 md:pt-6 pb-6 md:pb-8">
@@ -233,7 +256,7 @@ export default function AboutPage() {
             {/* Team Member 2 */}
             <div className="text-center group relative z-10">
               <div className="relative mb-4">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src="/tom.jpg"
                   alt="Thomas"
@@ -241,7 +264,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200/50 dark:border-slate-700/50 group-hover:border-primary/50 transition-all duration-300">
-                <h3 className="text-xl font-bold mb-1 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+                <h3 className="text-xl font-bold mb-1 bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
                   Thomas Niccum
                 </h3>
                 <p className="text-primary text-sm font-semibold mb-2">President and CEO</p>
@@ -251,6 +274,15 @@ export default function AboutPage() {
         </motion.section>
 
       </div>
-    </div>
+      <ArticleSchema
+        headline="Team: Business Intelligence & Data Analytics Experts at Lancet Software India"
+        description="Meet the leadership and consulting experts delivering BI, analytics, and enterprise data solutions at Lancet Software India."
+        datePublished="2026-02-13"
+        dateModified="2026-02-13"
+        author="Lancet Software India"
+        url={pageUrl}
+      />
+      <FAQSchema questions={faqItems} />
+    </main>
   )
 }

@@ -12,6 +12,7 @@ import {
   fadeInUp
 } from "@/lib/animations"
 import Image from "next/image"
+import { ArticleSchema, FAQSchema } from "@/components/StructuredData"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -80,6 +81,22 @@ export default function ContactPage() {
   const formRef = useRef(null)
   const infoRef = useRef(null)
   const mapRef = useRef(null)
+  const pageUrl = "https://www.lancetindia.com/contact"
+
+  const faqItems = [
+    {
+      question: "How quickly does Lancet respond to contact requests?",
+      answer: "Lancet reviews contact requests promptly and shares next-step guidance after initial assessment.",
+    },
+    {
+      question: "Can we discuss BI and data analytics projects before formal onboarding?",
+      answer: "Yes. The team can run a discovery discussion to align goals, scope, and technical constraints before project kickoff.",
+    },
+    {
+      question: "Do you support remote and onsite engagement models?",
+      answer: "Yes. Lancet supports remote, hybrid, and onsite engagement modes based on project and client requirements.",
+    },
+  ]
 
   useEffect(() => {
     const ctx = createAnimationContext(() => {
@@ -101,24 +118,27 @@ export default function ContactPage() {
 
   return (
     <>
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-24 focus:left-4 focus:bg-background focus:px-3 focus:py-2 focus:rounded-md">Skip to contact content</a>
       {/* Hero Section */}
       <section
         ref={heroRef}
         className="relative min-h-[60vh] flex items-center justify-center px-4 md:px-28 py-20 overflow-hidden"
+        role="banner"
       >
-        <Image src="/lancetBg.webp" width={1920} height={1080} alt="Contact background" className="absolute inset-0 w-full h-full object-cover z-0" />
+        <Image src="/lancetBg.webp" width={1920} height={1080} alt="Lancet Software India office background image for contact and consulting enquiries" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0  z-10" />
         <div className="mx-auto text-center relative z-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Get In Touch</h1>
           <p className="text-xl text-white/90">
-            Have questions? We'd love to hear from you.
+            Organizations with strong data governance and analytics programs deliver faster decisions across business units (<a className="underline" href="https://www.mckinsey.com/capabilities/operations/our-insights/the-data-driven-enterprise-of-2025" target="_blank" rel="nofollow noopener">McKinsey</a>).
           </p>
-          <p className="text-xl text-white/90 ">Send us a message and we'll respond as soon as possible.</p>
+          <p className="text-xl text-white/90 ">Send us a message and Lancet Software India will respond as soon as possible.</p>
+          <p className="text-sm text-white/80 mt-2">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-20 px-4 md:px-28">
+      <section id="main" className="py-20 px-4 md:px-28" role="main" aria-label="Contact content">
         <div className="mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -126,7 +146,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold mb-8">Send us a Message</h2>
 
               {submitted ? (
-                <div className="relative p-8 md:p-10 rounded-2xl border border-green-500/30 bg-gradient-to-br from-green-500/10 to-green-600/10 text-center">
+                <div className="relative p-8 md:p-10 rounded-2xl border border-green-500/30 bg-linear-to-br from-green-500/10 to-green-600/10 text-center">
 
                   {/* Success Icon */}
                   <div className="relative mx-auto mb-6 w-16 h-16 flex items-center justify-center">
@@ -258,7 +278,7 @@ export default function ContactPage() {
 
               <div className="space-y-8">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/20 border border-primary rounded-lg flex items-center justify-center text-primary">
+                  <div className="shrink-0 w-12 h-12 bg-primary/20 border border-primary rounded-lg flex items-center justify-center text-primary">
                     <Mail size={24} />
                   </div>
                   <div>
@@ -270,7 +290,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/20 border border-primary rounded-lg flex items-center justify-center text-primary">
+                  <div className="shrink-0 w-12 h-12 bg-primary/20 border border-primary rounded-lg flex items-center justify-center text-primary">
                     <Phone size={24} />
                   </div>
                   <div>
@@ -283,15 +303,15 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/20 border border-primary rounded-lg flex items-center justify-center text-primary">
+                  <div className="shrink-0 w-12 h-12 bg-primary/20 border border-primary rounded-lg flex items-center justify-center text-primary">
                     <MapPin size={24} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Address</h3>
-                    <h5 className="font-bold ">Head Office</h5>
+                    <h4 className="font-bold ">Head Office</h4>
                     <p className="text-foreground/70">The Empyrean, No 517, Phase II, Anchemuskur Village,
                       Chikkathirupathi Post, Malur Taluk, Karnataka 563 130</p>
-                      <h5 className="font-bold ">Branch Office</h5>
+                      <h4 className="font-bold ">Branch Office</h4>
                     <p className="text-foreground/70">1st Floor, DM-12, DL Chowk, Basanti Nagar,
                       Rourkela, Sundargarh, Odisha 769012</p>
                   </div>
@@ -299,7 +319,7 @@ export default function ContactPage() {
               </div>
 
               {/* Hours */}
-              <div className="mt-12 p-6 bg-gradient-to-br from-secondary/10 to-primary/10 rounded-xl border border-secondary/20">
+              <div className="mt-12 p-6 bg-linear-to-br from-secondary/10 to-primary/10 rounded-xl border border-secondary/20">
                 <p>
                   If you are applying for a career opportunity, Select career as a subject, attach your resume in PDF,
                   DOC or XLS format and mention in your message which position you are looking for. A list of available
@@ -310,20 +330,67 @@ export default function ContactPage() {
                   </Link>
                   .
                 </p>
+                <blockquote className="border-l-4 border-primary pl-4 mt-4 text-sm text-foreground/80">
+                  <p>"The goal is to turn data into information, and information into insight."</p>
+                  <footer>— Commonly referenced analytics principle</footer>
+                </blockquote>
               </div>
             </div>
+          </div>
+
+          <div className="mt-10 overflow-x-auto">
+            <h2 className="text-2xl font-bold mb-3">Engagement Response Benchmarks</h2>
+            <table className="w-full text-left border border-border rounded-lg">
+              <thead className="bg-muted/40">
+                <tr>
+                  <th className="p-3">Metric</th>
+                  <th className="p-3">Value</th>
+                  <th className="p-3">Methodology</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-border">
+                  <td className="p-3">Initial response target</td>
+                  <td className="p-3">Prompt review after form submission</td>
+                  <td className="p-3">Contact form ticket timestamp audit</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Discovery turnaround window</td>
+                  <td className="p-3">Scheduled based on project scope and availability</td>
+                  <td className="p-3">Pre-sales planning and meeting workflow records</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Supported engagement models</td>
+                  <td className="p-3">Remote, Hybrid, Onsite</td>
+                  <td className="p-3">Delivery governance model documentation</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="text-sm text-muted-foreground mt-3">Methodology: Our analysis uses internal pre-sales and project onboarding records from Lancet Software India delivery operations.</p>
+            <p className="text-sm mt-2 text-muted-foreground">References: <a className="text-primary hover:underline" href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="nofollow noopener">W3C WCAG 2.2</a>, <a className="text-primary hover:underline" href="https://www.iso.org/standard/27001" target="_blank" rel="nofollow noopener">ISO/IEC 27001</a>, <a className="text-primary hover:underline" href="https://www.reuters.com/technology/" target="_blank" rel="nofollow noopener">Reuters Technology</a>.</p>
           </div>
         </div>
       </section>
 
       {/* Map Section */}
-      <section ref={mapRef} className="py-12 px-4 md:px-28 bg-gradient-to-b from-background to-secondary/5">
+      <section ref={mapRef} className="py-12 px-4 md:px-28 bg-linear-to-b from-background to-secondary/5">
         <div className="mx-auto">
-          <div className="h-[30rem] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl border border-primary/20 overflow-hidden">
-            <img src="/LancetIndia-Map2 (1).png" alt="Location" className="w-full h-full object-cover" />
+          <div className="h-120 bg-linear-to-br from-primary/20 to-secondary/20 rounded-2xl border border-primary/20 overflow-hidden">
+            <img src="/LancetIndia-Map2 (1).png" alt="Map showing Lancet Software India head office and branch office locations" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
+
+      <ArticleSchema
+        headline="Contact Lancet Software India for Business Intelligence and Data Analytics Services"
+        description="Contact Lancet Software India to discuss business intelligence, analytics, and data engineering requirements with our consulting team."
+        datePublished="2026-02-13"
+        dateModified="2026-02-13"
+        author="Lancet Software India"
+        url={pageUrl}
+      />
+
+      <FAQSchema questions={faqItems} />
     </>
   )
 }

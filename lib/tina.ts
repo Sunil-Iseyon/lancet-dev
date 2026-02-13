@@ -3,7 +3,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 
-const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true"
+const isLocal = process.env.TINA_PUBLIC_IS_LOCAL !== "false"
 
 // Dynamic import for Tina Cloud client (only when needed)
 let tinaClient: any = null

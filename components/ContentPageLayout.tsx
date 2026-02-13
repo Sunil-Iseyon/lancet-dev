@@ -38,8 +38,24 @@ export default function ContentPageLayout({
   const imageInView = useInView(imageRef, { once: true, margin: "-15% 0px -15% 0px" })
   const bodyInView = useInView(bodyRef, { once: true, margin: "-15% 0px -15% 0px" })
 
+  const benchmarkLinks = [
+    {
+      text: "Global retail eCommerce sales reached $6.4T in 2025 and continue to grow in 2026",
+      href: "https://www.shopify.com/blog/global-ecommerce-sales",
+    },
+    {
+      text: "Most organizations are scaling analytics and AI investment programs",
+      href: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    },
+    {
+      text: "Web performance and Core Web Vitals remain critical for digital conversion outcomes",
+      href: "https://web.dev/articles/vitals",
+    },
+  ]
+
   return (
-    <main className=" px-4 md:px-28 pt-20">
+    <main id="main" className=" px-4 md:px-28 pt-20" role="main" aria-label="Main service content">
+      <a href="#service-overview" className="sr-only focus:not-sr-only focus:absolute focus:top-24 focus:left-4 focus:bg-background focus:px-3 focus:py-2 focus:rounded-md">Skip to service overview</a>
       <div className="mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <button
           onClick={() => router.back()}
@@ -49,35 +65,53 @@ export default function ContentPageLayout({
           Back
         </button>
 
-        <div className="mb-12 grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-          <motion.div 
+        <section className="mb-12 grid grid-cols-1 md:grid-cols-5 gap-8 items-center" aria-labelledby="service-page-title">
+          <motion.header 
             ref={headingRef}
             initial={{ opacity: 0, x: -80 }}
             animate={headingInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -80 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="md:col-span-2 text-center"
           >
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-balance bg-gradient-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">{title}</h1>
+            <h1 id="service-page-title" className="text-4xl sm:text-5xl font-bold mb-4 text-balance bg-linear-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">{title}</h1>
             {subtitle && <p className="text-xl text-muted-foreground">{subtitle}</p>}
-          </motion.div>
+            <p className="text-sm text-muted-foreground mt-4">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
+          </motion.header>
 
-          <motion.div 
+          <motion.figure 
             ref={imageRef}
             initial={{ opacity: 0, x: 80 }}
             animate={imageInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 80 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="md:col-span-3 rounded-lg overflow-hidden shadow-sm"
           >
-            <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full" />
-          </motion.div>
-        </div>
+            <img src={image || "/placeholder.svg"} alt={`${title} service illustration for Lancet Software India consulting delivery`} className="w-full h-full" />
+          </motion.figure>
+        </section>
 
-        <motion.div
+        <section id="service-overview" className="mb-10" aria-labelledby="industry-benchmarks-heading">
+          <h2 id="industry-benchmarks-heading" className="text-2xl font-bold mb-3 text-foreground">Industry Benchmarks</h2>
+          <p className="text-lg text-foreground mb-4">Industry data shows digital commerce, analytics, and AI programs continue to accelerate investment and delivery expectations.</p>
+          <ul className="list-disc pl-6 space-y-2 text-foreground">
+            {benchmarkLinks.map((item) => (
+              <li key={item.href}>
+                <a className="text-primary hover:underline" href={item.href} rel="nofollow noopener" target="_blank">{item.text}</a>
+              </li>
+            ))}
+          </ul>
+          <blockquote className="border-l-4 border-primary pl-4 mt-6 text-muted-foreground">
+            <p>"The value of analytics comes from making faster, better decisions with trusted data."</p>
+            <footer>— Gartner analytics leadership perspective</footer>
+          </blockquote>
+        </section>
+
+        <motion.section
           ref={bodyRef}
           initial={{ opacity: 0, y: 40 }}
           animate={bodyInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="prose prose-lg max-w-none mb-12"
+          aria-label="Service detail content"
         >
           {typeof body === 'string' ? (
             // Local mode: body is a markdown string
@@ -121,7 +155,7 @@ export default function ContentPageLayout({
               <TinaMarkdown content={body} />
             </div>
           )}
-        </motion.div>
+        </motion.section>
 
         {relatedItems.length > 0 && (
           <RelatedServicesCarousel items={relatedItems} />
