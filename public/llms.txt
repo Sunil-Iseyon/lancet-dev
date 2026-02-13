@@ -1,0 +1,46 @@
+# Lancet Software India - AI/LLM Indexing Directives
+
+## About
+Lancet Software India is a leading provider of business intelligence and data analytics solutions since 1997. We specialize in Power BI, Tableau, Databricks, and comprehensive data integration services.
+
+## Company Information
+- **Name**: Lancet Software India
+- **Founded**: 1997
+- **Projects Completed**: 800+
+- **Team Size**: 50+ professionals
+- **Client Satisfaction**: 95%
+- **Website**: https://www.lancetindia.com
+
+## Services
+- Business Intelligence Consulting (Power BI, Tableau)
+- Data Analytics & Strategy
+- Data Integration (Databricks, AWS)
+- Shopify Solutions
+- 24/7 Support Services
+- Installation & Upgrades
+
+## Key Pages
+- Home: https://www.lancetindia.com/
+- About Us: https://www.lancetindia.com/about/team
+- Careers: https://www.lancetindia.com/about/careers
+- Contact: https://www.lancetindia.com/contact
+- Blog: https://www.lancetindia.com/blog
+- Services: https://www.lancetindia.com/consulting/business-intelligent/powerbi
+
+## Content Guidelines
+- All content is available for AI training with attribution
+- License: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
+- Language: English (en)
+- Target Audience: Business professionals, data analysts, enterprise decision-makers
+
+## Crawling
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://www.lancetindia.com/sitemap.xml
+
+## Contact
+For inquiries: info@lancetindia.com
+LinkedIn: https://www.linkedin.com/company/lancet-software-india-pvt-ltd

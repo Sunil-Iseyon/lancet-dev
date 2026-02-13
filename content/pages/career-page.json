@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "badge": "Join Our Team",
+    "title": "Build Your Career with Lancet",
+    "subtitle": "Shape the future of business intelligence and data analytics. Join a team of passionate innovators committed to transforming data into actionable insights."
+  },
+  "whyUs": {
+    "title": "Why Choose Lancet?",
+    "subtitle": "We're more than just a workplace. We're a community of innovators dedicated to excellence.",
+    "reasons": [
+      {
+        "title": "Growth Opportunities",
+        "description": "We invest in your professional development with training programs, certifications, and clear career progression paths.",
+        "icon": "TrendingUp"
+      },
+      {
+        "title": "Collaborative Environment",
+        "description": "Work alongside talented professionals in a supportive atmosphere that values teamwork and innovation.",
+        "icon": "Users"
+      },
+      {
+        "title": "Cutting-Edge Projects",
+        "description": "Work on innovative projects using the latest technologies in business intelligence and data analytics.",
+        "icon": "Briefcase"
+      },
+      {
+        "title": "Work-Life Balance",
+        "description": "We believe in maintaining a healthy balance with flexible work arrangements and generous time-off policies.",
+        "icon": "Heart"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits & Perks",
+    "subtitle": "We take care of our team with comprehensive benefits and perks",
+    "categories": [
+      {
+        "title": "Health & Wellness",
+        "items": [
+          "Medical, dental, and vision insurance",
+          "Health savings accounts",
+          "Wellness programs"
+        ]
+      },
+      {
+        "title": "Financial Benefits",
+        "items": [
+          "Competitive salary",
+          "Performance bonuses",
+          "Retirement plans with company match"
+        ]
+      },
+      {
+        "title": "Work Flexibility",
+        "items": [
+          "Hybrid work options",
+          "Flexible hours",
+          "Generous PTO policy"
+        ]
+      },
+      {
+        "title": "Learning & Development",
+        "items": [
+          "Professional certifications",
+          "Conference attendance",
+          "Online learning platforms"
+        ]
+      },
+      {
+        "title": "Office Perks",
+        "items": [
+          "Modern workspace",
+          "Free snacks & beverages",
+          "Team building events"
+        ]
+      },
+      {
+        "title": "Additional Benefits",
+        "items": [
+          "Employee assistance program",
+          "Parental leave",
+          "Referral bonuses"
+        ]
+      }
+    ]
+  },
+  "culture": {
+    "title": "Our Culture",
+    "subtitle": "We foster an environment where innovation thrives and everyone can do their best work",
+    "values": [
+      {
+        "title": "Innovation First",
+        "description": "We encourage experimentation and creative problem-solving. Your ideas matter here."
+      },
+      {
+        "title": "Diversity & Inclusion",
+        "description": "We celebrate diverse perspectives and create an inclusive workplace for all."
+      },
+      {
+        "title": "Continuous Learning",
+        "description": "Stay ahead with ongoing training, mentorship, and access to cutting-edge technologies."
+      },
+      {
+        "title": "Impact & Recognition",
+        "description": "Your work directly impacts clients and is recognized and rewarded accordingly."
+      }
+    ]
+  },
+  "application": {
+    "title": "Apply Now",
+    "subtitle": "Take the first step towards an exciting career with Lancet"
+  }
+}
