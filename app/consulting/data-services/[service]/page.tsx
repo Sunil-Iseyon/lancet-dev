@@ -2,7 +2,9 @@ import { getPage } from "@/lib/tina"
 import ContentPageLayout from "@/components/ContentPageLayout"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
-import BreadcrumbSchema, { ServiceSchema } from "@/components/StructuredData"
+import BreadcrumbSchema, { FAQSchema, ServiceSchema } from "@/components/StructuredData"
+
+const publishedDate = "2026-02-13"
 
 export async function generateMetadata({
   params,
@@ -40,6 +42,10 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: url,
+      languages: {
+        en: url,
+        'x-default': url,
+      },
     },
     other: {
       'DC.title': pageData.title,
@@ -64,6 +70,20 @@ export default async function DataServicesServicePage({
   }
 
   const pageUrl = `https://www.lancetindia.com/consulting/data-services/${service}`
+  const faqItems = [
+    {
+      question: `What is included in your ${pageData.title} service delivery?`,
+      answer: `We provide architecture planning, implementation, security, performance tuning, and long-term managed support for ${pageData.title}.`
+    },
+    {
+      question: `Can ${pageData.title} be integrated with our current data stack?`,
+      answer: `Yes. We integrate ${pageData.title} with cloud platforms, databases, BI tools, and enterprise applications with minimal disruption.`
+    },
+    {
+      question: `How does Lancet ensure data quality and governance?`,
+      answer: `We implement validation rules, lineage controls, access governance, and monitoring processes to maintain trusted enterprise data.`
+    },
+  ]
 
   return (
     <>
@@ -82,7 +102,26 @@ export default async function DataServicesServicePage({
         url={pageUrl}
         serviceType="Data Services"
         areaServed="Worldwide"
+        inLanguage="en"
+        datePublished={publishedDate}
+        dateModified={publishedDate}
+        author={{
+          name: "Lancet Software India",
+          url: "https://www.lancetindia.com/about/team",
+          sameAs: ["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"],
+        }}
+        offerCatalog={{
+          name: `${pageData.title} Service Portfolio`,
+          items: [
+            `${pageData.title} Assessment & Architecture`,
+            `${pageData.title} Implementation`,
+            `${pageData.title} Optimization`,
+            `${pageData.title} Managed Operations`,
+          ],
+        }}
       />
+
+      <FAQSchema questions={faqItems} />
 
       <ContentPageLayout
         title={pageData.title}

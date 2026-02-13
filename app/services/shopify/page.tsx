@@ -2,7 +2,10 @@ import { getPage } from "@/lib/tina"
 import ContentPageLayout from "@/components/ContentPageLayout"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
-import BreadcrumbSchema, { ServiceSchema } from "@/components/StructuredData"
+import BreadcrumbSchema, { FAQSchema, ServiceSchema } from "@/components/StructuredData"
+
+const pageUrl = "https://www.lancetindia.com/services/shopify"
+const publishedDate = "2026-02-13"
 
 export const metadata: Metadata = {
   title: 'Shopify Solutions - E-commerce Excellence | Lancet Software India',
@@ -19,7 +22,11 @@ export const metadata: Metadata = {
     description: 'Transform your e-commerce with expert Shopify solutions.',
   },
   alternates: {
-    canonical: 'https://www.lancetindia.com/services/shopify',
+    canonical: pageUrl,
+    languages: {
+      en: pageUrl,
+      'x-default': pageUrl,
+    },
   },
   other: {
     'DC.title': 'Shopify Solutions by Lancet Software India',
@@ -35,7 +42,20 @@ export default async function ShopifyPage() {
     notFound()
   }
 
-  const pageUrl = "https://www.lancetindia.com/services/shopify"
+  const faqItems = [
+    {
+      question: "How long does a Shopify implementation usually take?",
+      answer: "Typical projects take 4 to 10 weeks depending on integrations, custom app requirements, and migration complexity.",
+    },
+    {
+      question: "Can Lancet integrate Shopify with ERP and CRM systems?",
+      answer: "Yes. We integrate Shopify with ERP, CRM, payment gateways, shipping tools, and analytics platforms for near real-time operations.",
+    },
+    {
+      question: "Do you provide ongoing Shopify support after launch?",
+      answer: "Yes. We provide managed support, performance monitoring, security updates, and feature enhancements after go-live.",
+    },
+  ]
 
   return (
     <>
@@ -53,7 +73,26 @@ export default async function ShopifyPage() {
         url={pageUrl}
         serviceType="E-commerce Development"
         areaServed="Worldwide"
+        inLanguage="en"
+        datePublished={publishedDate}
+        dateModified={publishedDate}
+        author={{
+          name: "Lancet Software India",
+          url: "https://www.lancetindia.com/about/team",
+          sameAs: ["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"],
+        }}
+        offerCatalog={{
+          name: "Shopify Services",
+          items: [
+            "Shopify Store Design & Development",
+            "Custom Shopify App Development",
+            "Payment Gateway & Checkout Integration",
+            "Shopify Integration Services",
+          ],
+        }}
       />
+
+      <FAQSchema questions={faqItems} />
 
       <ContentPageLayout
         title={pageData.title}

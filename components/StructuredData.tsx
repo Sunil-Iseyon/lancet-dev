@@ -48,6 +48,18 @@ interface ServiceSchemaProps {
   }
   areaServed?: string
   serviceType?: string
+  datePublished?: string
+  dateModified?: string
+  inLanguage?: string
+  author?: {
+    name: string
+    url?: string
+    sameAs?: string[]
+  }
+  offerCatalog?: {
+    name: string
+    items: string[]
+  }
 }
 
 export function ServiceSchema({
@@ -57,6 +69,11 @@ export function ServiceSchema({
   provider = { name: 'Lancet Software India', url: 'https://www.lancetindia.com' },
   areaServed = 'Worldwide',
   serviceType = 'Business Intelligence',
+  datePublished,
+  dateModified,
+  inLanguage = 'en',
+  author,
+  offerCatalog,
 }: ServiceSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
@@ -71,6 +88,64 @@ export function ServiceSchema({
     },
     areaServed,
     serviceType,
+    inLanguage,
+    ...(datePublished && { datePublished }),
+    ...(dateModified && { dateModified }),
+    ...(author && {
+      author: {
+        '@type': 'Organization',
+        name: author.name,
+        ...(author.url && { url: author.url }),
+        ...(author.sameAs && { sameAs: author.sameAs }),
+      },
+    }),
+    ...(offerCatalog && {
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: offerCatalog.name,
+        itemListElement: offerCatalog.items.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'Service',
+            name: item,
+          },
+        })),
+      },
+    }),
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+interface FAQSchemaProps {
+  questions: Array<{
+    question: string
+    answer: string
+  }>
+}
+
+export function FAQSchema({ questions }: FAQSchemaProps) {
+  if (!questions.length) {
+    return null
+  }
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
   }
 
   return (

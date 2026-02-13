@@ -2,7 +2,9 @@ import { getPage, getPagesByCategory, getPageSlug } from "@/lib/tina"
 import ContentPageLayout from "@/components/ContentPageLayout"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
-import BreadcrumbSchema, { ServiceSchema } from "@/components/StructuredData"
+import BreadcrumbSchema, { FAQSchema, ServiceSchema } from "@/components/StructuredData"
+
+const publishedDate = "2026-02-13"
 
 export async function generateMetadata({
   params,
@@ -40,6 +42,10 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: url,
+      languages: {
+        en: url,
+        'x-default': url,
+      },
     },
     other: {
       'DC.title': pageData.title,
@@ -75,6 +81,20 @@ export default async function BusinessIntelligentServicePage({
     }))
 
   const pageUrl = `https://www.lancetindia.com/consulting/business-intelligent/${service}`
+  const faqItems = [
+    {
+      question: `What business outcomes can ${pageData.title} consulting deliver?`,
+      answer: `Our ${pageData.title} consulting focuses on faster reporting, stronger data quality, and better executive decision support.`
+    },
+    {
+      question: `Does Lancet support end-to-end ${pageData.title} implementation?`,
+      answer: `Yes. We cover solution design, implementation, optimization, governance, and managed support for ${pageData.title}.`
+    },
+    {
+      question: `Can ${pageData.title} be integrated with existing enterprise systems?`,
+      answer: `Yes. We integrate ${pageData.title} with data warehouses, cloud platforms, CRMs, ERPs, and operational data sources.`
+    },
+  ]
 
   return (
     <>
@@ -93,7 +113,26 @@ export default async function BusinessIntelligentServicePage({
         url={pageUrl}
         serviceType="Business Intelligence Consulting"
         areaServed="Worldwide"
+        inLanguage="en"
+        datePublished={publishedDate}
+        dateModified={publishedDate}
+        author={{
+          name: "Lancet Software India",
+          url: "https://www.lancetindia.com/about/team",
+          sameAs: ["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"],
+        }}
+        offerCatalog={{
+          name: `${pageData.title} Service Portfolio`,
+          items: [
+            `${pageData.title} Assessment & Roadmap`,
+            `${pageData.title} Implementation`,
+            `${pageData.title} Optimization`,
+            `${pageData.title} Managed Support`,
+          ],
+        }}
       />
+
+      <FAQSchema questions={faqItems} />
 
       <ContentPageLayout
         title={pageData.title}
