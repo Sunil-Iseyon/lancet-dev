@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Head Office Address */}
           <motion.div variants={fadeUp} className="text-center sm:text-left">
-            <h4 className="font-semibold mb-3 sm:mb-4 text-base">Head Office</h4>
+            <h3 className="font-semibold mb-3 sm:mb-4 text-base">Head Office</h3>
             <div className="text-xs sm:text-sm leading-relaxed space-y-1 sm:space-y-2">
               <p className="font-medium mb-1 sm:mb-2">LANCET SOFTWARE INDIA PVT. LTD.</p>
               <p>
@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Branch Office Address */}
           <motion.div variants={fadeUp} className="text-center sm:text-left">
-            <h4 className="font-semibold mb-3 sm:mb-4 text-base">Branch Office</h4>
+            <h3 className="font-semibold mb-3 sm:mb-4 text-base">Branch Office</h3>
             <div className="text-xs sm:text-sm leading-relaxed space-y-1 sm:space-y-2">
               <p className="font-medium mb-1 sm:mb-2">LANCET SOFTWARE INDIA PVT. LTD.</p>
               <p>
@@ -119,7 +119,7 @@ export default function Footer() {
 
           {/* Company Menu */}
           <motion.div variants={fadeUp} className="text-center sm:text-left">
-            <h4 className="font-semibold mb-3 sm:mb-4 text-base">Company</h4>
+            <h3 className="font-semibold mb-3 sm:mb-4 text-base">Company</h3>
             <ul className="space-y-2 text-xs sm:text-sm">
               {companyLinks.map((item) => (
                 <li key={item.name}>
@@ -144,6 +144,14 @@ export default function Footer() {
           <p>
             © {currentYear} Lancet Software India. All rights reserved.
           </p>
+
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            rel="license"
+            className="mt-3 md:mt-0 text-background/90 hover:underline"
+          >
+            CC BY 4.0 License
+          </a>
 
           <Link
             target="_blank"

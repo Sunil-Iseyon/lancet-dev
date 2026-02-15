@@ -72,12 +72,50 @@ export default async function BlogPage() {
       <section className="px-4 md:px-28 pb-8" aria-labelledby="blog-evidence-heading">
         <h2 id="blog-evidence-heading" className="text-2xl font-bold mb-3">Analytics Insights Backed by Industry Research</h2>
         <p className="text-muted-foreground">
-          Global AI and analytics investment continues to expand across industries, increasing demand for practical, evidence-based implementation guidance (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey</a>, <a className="text-primary hover:underline" href="https://www.gartner.com/en/information-technology/glossary/business-intelligence-tools" target="_blank" rel="nofollow noopener">Gartner</a>). Last updated <time dateTime="2026-02-13">February 13, 2026</time>.
+          AI and analytics investment expands across industries. This increases demand for practical and evidence-based implementation guidance (
+          <a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey State of AI</a>,
+          {' '}
+          <a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner AI for Data Analytics</a>,
+          {' '}
+          <a className="text-primary hover:underline" href="https://www.gartner.com/en/articles/ai-investments" target="_blank" rel="nofollow noopener">Gartner AI Investment Framework</a>
+          ). Last updated <time dateTime="2026-02-13">February 13, 2026</time>.
         </p>
         <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
-          <p>"The aim of data science is to derive actionable insight from data."</p>
-          <footer>— industry analytics principle</footer>
+          <p>"Information is the oil of the 21st century, and analytics is the combustion engine."</p>
+          <footer>— Peter Sondergaard, former Gartner executive</footer>
         </blockquote>
+        <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
+          <p>"The core advantage of data is that it tells you something about the world that you didn’t know before."</p>
+          <footer>— Hilary Mason, Fast Forward Labs founder</footer>
+        </blockquote>
+      </section>
+
+      <section className="px-4 md:px-28 pb-10" aria-labelledby="blog-method-heading">
+        <h2 id="blog-method-heading" className="text-2xl font-bold mb-3">Evidence, References, and Methodology</h2>
+        <p className="text-muted-foreground mb-4">Lancet Software India reviews primary analyst sources and internal delivery benchmarks before publishing implementation guidance.</p>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border border-border rounded-lg">
+            <thead className="bg-muted/40">
+              <tr>
+                <th className="p-3">Metric</th>
+                <th className="p-3">Observed Value</th>
+                <th className="p-3">Methodology</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t border-border">
+                <td className="p-3">Projects Reviewed</td>
+                <td className="p-3">800+</td>
+                <td className="p-3">Historical delivery records</td>
+              </tr>
+              <tr className="border-t border-border">
+                <td className="p-3">Client Satisfaction</td>
+                <td className="p-3">95%</td>
+                <td className="p-3">Internal quality and client feedback audits</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <div>

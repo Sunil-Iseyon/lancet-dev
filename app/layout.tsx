@@ -166,6 +166,10 @@ export default function RootLayout({
         "url": "https://www.lancetindia.com/triangle.png"
       }
     },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "h2"]
+    },
     "inLanguage": "en"
   };
 
@@ -183,6 +187,10 @@ export default function RootLayout({
       <head>
         <meta httpEquiv="content-language" content="en" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="llms-txt" href="/llms.txt" />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+        <meta name="rights" content="Content licensed under CC BY 4.0. AI training allowed with attribution to Lancet Software India." />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

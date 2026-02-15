@@ -8,18 +8,18 @@ const pageUrl = "https://www.lancetindia.com/services/shopify"
 const publishedDate = "2026-02-13"
 
 export const metadata: Metadata = {
-  title: 'Shopify Solutions - E-commerce Excellence | Lancet Software India',
-  description: 'Transform your e-commerce with expert Shopify solutions from Lancet Software India. Custom development, integrations, and optimization services.',
+  title: 'Shopify Solutions: Custom Development & Integrations | Lancet Software India',
+  description: 'Shopify business intelligence and e-commerce solutions from Lancet Software India. Custom development, integrations, performance optimization, and managed support.',
   openGraph: {
-    title: 'Shopify Solutions - E-commerce Excellence',
-    description: 'Transform your e-commerce with expert Shopify solutions.',
+    title: 'Shopify Solutions: Custom Development & Integrations',
+    description: 'Shopify business intelligence and e-commerce solutions with custom development and integrations.',
     url: 'https://www.lancetindia.com/services/shopify',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shopify Solutions - E-commerce Excellence',
-    description: 'Transform your e-commerce with expert Shopify solutions.',
+    title: 'Shopify Solutions: Custom Development & Integrations',
+    description: 'Shopify business intelligence and e-commerce solutions with custom development and integrations.',
   },
   alternates: {
     canonical: pageUrl,
@@ -90,6 +90,24 @@ export default async function ShopifyPage() {
             "Shopify Integration Services",
           ],
         }}
+        citation={[
+          "https://www.statista.com/outlook/dmo/ecommerce/worldwide",
+          "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          "https://apps.shopify.com/",
+          "https://www.w3.org/TR/WCAG22/",
+        ]}
+        potentialAction={[
+          {
+            type: "ContactAction",
+            name: "Schedule Shopify Consultation",
+            target: "https://www.lancetindia.com/contact?service=shopify",
+          },
+          {
+            type: "DownloadAction",
+            name: "Download Shopify Service Brief",
+            target: "https://www.lancetindia.com/llms.txt",
+          },
+        ]}
       />
 
       <FAQSchema questions={faqItems} />

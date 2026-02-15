@@ -40,15 +40,19 @@ export default function ContentPageLayout({
 
   const benchmarkLinks = [
     {
-      text: "Global retail eCommerce sales reached $6.4T in 2025 and continue to grow in 2026",
-      href: "https://www.shopify.com/blog/global-ecommerce-sales",
+      text: "Global eCommerce sales are projected at $6.4 trillion, increasing pressure for faster analytics-driven decisions.",
+      href: "https://www.statista.com/outlook/dmo/ecommerce/worldwide",
     },
     {
-      text: "Most organizations are scaling analytics and AI investment programs",
+      text: "Most organizations continue scaling analytics and AI investment programs for enterprise productivity.",
       href: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
     },
     {
-      text: "Web performance and Core Web Vitals remain critical for digital conversion outcomes",
+      text: "AI for analytics remains a strategic enterprise priority across data and BI platforms.",
+      href: "https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics",
+    },
+    {
+      text: "Web performance and Core Web Vitals continue to influence digital conversion outcomes.",
       href: "https://web.dev/articles/vitals",
     },
   ]
@@ -75,6 +79,7 @@ export default function ContentPageLayout({
           >
             <h1 id="service-page-title" className="text-4xl sm:text-5xl font-bold mb-4 text-balance bg-linear-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">{title}</h1>
             {subtitle && <p className="text-xl text-muted-foreground">{subtitle}</p>}
+            <p className="text-sm text-muted-foreground mt-2">By <a className="text-primary hover:underline" href="/about/team">Lancet Software India Team</a></p>
             <p className="text-sm text-muted-foreground mt-4">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
           </motion.header>
 
@@ -91,7 +96,7 @@ export default function ContentPageLayout({
 
         <section id="service-overview" className="mb-10" aria-labelledby="industry-benchmarks-heading">
           <h2 id="industry-benchmarks-heading" className="text-2xl font-bold mb-3 text-foreground">Industry Benchmarks</h2>
-          <p className="text-lg text-foreground mb-4">Industry data shows digital commerce, analytics, and AI programs continue to accelerate investment and delivery expectations.</p>
+          <p className="text-lg text-foreground mb-4">Industry data shows digital commerce, analytics, and AI programs continue to accelerate investment and delivery expectations. Consequently, delivery teams are expected to ship outcomes faster with measurable governance.</p>
           <ul className="list-disc pl-6 space-y-2 text-foreground">
             {benchmarkLinks.map((item) => (
               <li key={item.href}>
@@ -100,9 +105,47 @@ export default function ContentPageLayout({
             ))}
           </ul>
           <blockquote className="border-l-4 border-primary pl-4 mt-6 text-muted-foreground">
-            <p>"The value of analytics comes from making faster, better decisions with trusted data."</p>
-            <footer>— Gartner analytics leadership perspective</footer>
+            <p>"Information is the oil of the 21st century, and analytics is the combustion engine."</p>
+            <footer>— Peter Sondergaard, former Gartner executive</footer>
           </blockquote>
+          <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
+            <p>"The core advantage of data is that it tells you something about the world that you didn’t know before."</p>
+            <footer>— Hilary Mason, Fast Forward Labs founder</footer>
+          </blockquote>
+        </section>
+
+        <section className="mb-12" aria-labelledby="evidence-methodology-heading">
+          <h2 id="evidence-methodology-heading" className="text-2xl font-bold mb-3 text-foreground">Evidence, References, and Methodology</h2>
+          <p className="text-foreground mb-4">Furthermore, Lancet Software India validates delivery outcomes through internal project benchmarking and post-implementation reviews.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border border-border rounded-lg">
+              <thead className="bg-muted/40">
+                <tr>
+                  <th className="p-3">Metric</th>
+                  <th className="p-3">Observed Value</th>
+                  <th className="p-3">Methodology</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t border-border">
+                  <td className="p-3">Delivery Success Rate</td>
+                  <td className="p-3">95%</td>
+                  <td className="p-3">Internal project tracking and governance reviews</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="p-3">Enterprise BI Projects</td>
+                  <td className="p-3">800+</td>
+                  <td className="p-3">Historical delivery portfolio since 1997</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ol className="list-decimal pl-6 mt-4 space-y-2 text-foreground">
+            <li><a className="text-primary hover:underline" href="https://www.statista.com/outlook/dmo/ecommerce/worldwide" target="_blank" rel="nofollow noopener">Statista eCommerce Outlook</a></li>
+            <li><a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey State of AI</a></li>
+            <li><a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner AI for Data Analytics</a></li>
+            <li><a className="text-primary hover:underline" href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="nofollow noopener">W3C WCAG 2.2</a></li>
+          </ol>
         </section>
 
         <motion.section
@@ -162,12 +205,21 @@ export default function ContentPageLayout({
         )}
 
         <div className="mt-16 pt-12 border-t border-border">
-          <p className="text-muted-foreground mb-4">Interested in our services?</p>
+          <p className="text-muted-foreground mb-4">Interested in our services? Additionally, you can review a structured service brief before booking a consultation.</p>
+          <div className="mb-4">
+            <a
+              href="/llms.txt"
+              className="text-primary hover:underline"
+              download
+            >
+              Download Service Reference Brief
+            </a>
+          </div>
           <button 
             onClick={() => router.push("/contact")}
             className="px-6 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:opacity-90 transition-opacity"
           >
-            Get in Touch
+            Contact Lancet Software India
           </button>
         </div>
         

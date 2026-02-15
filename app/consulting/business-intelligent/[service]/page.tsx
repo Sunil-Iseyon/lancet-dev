@@ -130,6 +130,23 @@ export default async function BusinessIntelligentServicePage({
             `${pageData.title} Managed Support`,
           ],
         }}
+        citation={[
+          "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+          "https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics",
+          "https://www.w3.org/TR/WCAG22/",
+        ]}
+        potentialAction={[
+          {
+            type: "ContactAction",
+            name: "Schedule BI Consulting Session",
+            target: "https://www.lancetindia.com/contact?service=business-intelligence",
+          },
+          {
+            type: "ViewAction",
+            name: "View Service Details",
+            target: pageUrl,
+          },
+        ]}
       />
 
       <FAQSchema questions={faqItems} />

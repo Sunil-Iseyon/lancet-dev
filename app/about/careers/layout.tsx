@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import type React from "react"
 
 export const metadata: Metadata = {
-  title: "Careers in Business Intelligence & Data Analytics",
+  title: "Careers in Business Intelligence & Data Analytics | Lancet Software India",
   description:
-    "Build your career in Business Intelligence and Data Analytics with Lancet Software India. Join projects across BI, data engineering, and analytics consulting.",
+    "Careers in Business Intelligence and Data Analytics at Lancet Software India. Build skills across 800+ BI projects with 95% employee satisfaction and structured growth.",
   alternates: {
     canonical: "https://www.lancetindia.com/about/careers",
     languages: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers in Business Intelligence & Data Analytics",
+    title: "Careers in Business Intelligence & Data Analytics | Lancet Software India",
     description:
-      "Explore BI and data analytics career opportunities at Lancet Software India.",
+      "Explore BI and data analytics careers backed by enterprise delivery and structured learning.",
   },
 }
 

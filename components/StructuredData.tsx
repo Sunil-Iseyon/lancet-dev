@@ -60,6 +60,12 @@ interface ServiceSchemaProps {
     name: string
     items: string[]
   }
+  citation?: string[]
+  potentialAction?: Array<{
+    type: 'ContactAction' | 'DownloadAction' | 'ViewAction' | 'ReadAction'
+    name: string
+    target: string
+  }>
 }
 
 export function ServiceSchema({
@@ -74,6 +80,8 @@ export function ServiceSchema({
   inLanguage = 'en',
   author,
   offerCatalog,
+  citation,
+  potentialAction,
 }: ServiceSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
@@ -112,6 +120,14 @@ export function ServiceSchema({
           },
         })),
       },
+    }),
+    ...(citation && citation.length > 0 && { citation }),
+    ...(potentialAction && potentialAction.length > 0 && {
+      potentialAction: potentialAction.map((action) => ({
+        '@type': action.type,
+        name: action.name,
+        target: action.target,
+      })),
     }),
   }
 

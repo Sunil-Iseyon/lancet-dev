@@ -311,8 +311,13 @@ export default function CareerPage() {
         Build Your Career in Business Intelligence & Data Analytics with Lancet Software India
       </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            India's analytics talent demand has expanded rapidly in recent years, making high-quality BI and data engineering skills a strategic career path (<a className="text-primary hover:underline" href="https://www.statista.com/outlook/tmo/software/enterprise-software/business-intelligence-software/india" target="_blank" rel="nofollow noopener">Statista market outlook</a>). Lancet Software India builds careers through real client delivery in business intelligence and data analytics.
+            India&apos;s analytics talent demand has expanded rapidly in recent years. This trend makes BI and data engineering skills a strategic career path (
+            <a className="text-primary hover:underline" href="https://www.statista.com/outlook/tmo/software/enterprise-software/business-intelligence-software/india" target="_blank" rel="nofollow noopener">Statista market outlook</a>,
+            {' '}
+            <a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-state-of-organizations" target="_blank" rel="nofollow noopener">McKinsey talent insights</a>
+            ). Lancet Software India builds careers through real client delivery in business intelligence and data analytics.
           </p>
+          <p className="text-sm text-muted-foreground">By <a className="text-primary hover:underline" href="/about/team">Lancet Software India Team</a></p>
           <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
           <div className="flex flex-wrap gap-4 justify-center mt-8">
             <button
@@ -397,7 +402,11 @@ export default function CareerPage() {
 
           <blockquote className="border-l-4 border-primary pl-4 mt-8 text-muted-foreground">
             <p>"Information is the oil of the 21st century, and analytics is the combustion engine."</p>
-            <footer>— Widely cited analytics leadership perspective</footer>
+            <footer>— Peter Sondergaard, former Gartner executive</footer>
+          </blockquote>
+          <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
+            <p>"Data analytics can produce measurable business value when teams align people, process, and platforms."</p>
+            <footer>— McKinsey analytics insights</footer>
           </blockquote>
         </section>
 
