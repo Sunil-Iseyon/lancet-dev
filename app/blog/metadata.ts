@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog - Insights & Expertise | Lancet Software India',
-  description: 'Expert insights on business intelligence, data analytics, AI, and enterprise solutions. Read the latest trends and best practices from Lancet Software India.',
+  description: 'Business intelligence and data analytics insights from Lancet Software India experts. Read practical BI implementation guides, analytics trends, and enterprise data integration best practices.',
   openGraph: {
     title: 'Blog - Insights & Expertise | Lancet Software India',
     description: 'Expert insights on business intelligence, data analytics, AI, and enterprise solutions.',

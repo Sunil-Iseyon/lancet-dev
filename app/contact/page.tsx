@@ -86,11 +86,11 @@ export default function ContactPage() {
   const faqItems = [
     {
       question: "How quickly does Lancet respond to contact requests?",
-      answer: "Lancet reviews contact requests promptly and shares next-step guidance after initial assessment.",
+      answer: "Lancet typically reviews contact requests promptly and shares next-step guidance after initial assessment.",
     },
     {
       question: "Can we discuss BI and data analytics projects before formal onboarding?",
-      answer: "Yes. The team can run a discovery discussion to align goals, scope, and technical constraints before project kickoff.",
+      answer: "Yes. The team can generally run a discovery discussion to align goals, scope, and technical constraints before project kickoff.",
     },
     {
       question: "Do you support remote and onsite engagement models?",
@@ -130,9 +130,9 @@ export default function ContactPage() {
         <div className="mx-auto text-center relative z-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Contact Our Business Intelligence &amp; Data Analytics Team</h1>
           <p className="text-xl text-white/90">
-            Organizations with strong data governance and analytics programs deliver faster decisions across business units (<a className="underline" href="https://www.mckinsey.com/capabilities/operations/our-insights/the-data-driven-enterprise-of-2025" target="_blank" rel="nofollow noopener">McKinsey</a>).
+            Organizations with strong data governance and analytics programs typically deliver faster decisions across business units (<a className="underline" href="https://www.mckinsey.com/capabilities/operations/our-insights/the-data-driven-enterprise-of-2025" target="_blank" rel="nofollow noopener">McKinsey</a>).
           </p>
-          <p className="text-xl text-white/90 ">Send us a message and Lancet Software India will respond as soon as possible.</p>
+          <p className="text-xl text-white/90 ">Furthermore, Lancet Software India responds promptly to consulting and partnership enquiries.</p>
           <p className="text-sm text-white/80 mt-2">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
         </div>
       </section>
@@ -370,7 +370,7 @@ export default function ContactPage() {
                 </tr>
               </tbody>
             </table>
-            <p className="text-sm text-muted-foreground mt-3">Methodology: Our analysis uses internal pre-sales and project onboarding records from Lancet Software India delivery operations.</p>
+            <p className="text-sm text-muted-foreground mt-3">Methodology: Internal pre-sales and project onboarding records from Lancet Software India. Response benchmarks are reviewed quarterly.</p>
             <p className="text-sm mt-2 text-muted-foreground">References: <a className="text-primary hover:underline" href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="nofollow noopener">W3C WCAG 2.2</a>, <a className="text-primary hover:underline" href="https://www.iso.org/standard/27001" target="_blank" rel="nofollow noopener">ISO/IEC 27001</a>, <a className="text-primary hover:underline" href="https://www.reuters.com/technology/" target="_blank" rel="nofollow noopener">Reuters Technology</a>.</p>
           </div>
         </div>
@@ -380,7 +380,7 @@ export default function ContactPage() {
       <section ref={mapRef} className="py-12 px-4 md:px-28 bg-linear-to-b from-background to-secondary/5">
         <div className="mx-auto">
           <div className="h-120 bg-linear-to-br from-primary/20 to-secondary/20 rounded-2xl border border-primary/20 overflow-hidden">
-            <img src="/LancetIndia-Map2 (1).png" alt="Map showing Lancet Software India head office and branch office locations" className="w-full h-full object-cover" />
+            <img src="/LancetIndia-Map2 (1).png" alt="Map showing Lancet Software India head office and branch office locations in Karnataka and Odisha, India" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
       </section>

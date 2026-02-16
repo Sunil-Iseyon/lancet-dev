@@ -97,7 +97,7 @@ export default function ContentPageLayout({
 
         <section id="service-overview" className="mb-10" aria-labelledby="industry-benchmarks-heading">
           <h2 id="industry-benchmarks-heading" className="text-2xl font-bold mb-3 text-foreground">Industry Benchmarks</h2>
-          <p className="text-lg text-foreground mb-4">Industry data shows digital commerce, analytics, and <abbr title="Artificial Intelligence">AI</abbr> programs continue to accelerate investment and delivery expectations. Consequently, delivery teams are expected to ship outcomes faster with measurable governance.</p>
+          <p className="text-lg text-foreground mb-4">Industry data suggests that digital commerce, analytics, and <abbr title="Artificial Intelligence">AI</abbr> programs continue to grow. Investment and delivery expectations are accelerating. Consequently, delivery teams are typically expected to ship outcomes faster. Measurable governance is essential.</p>
           <ul className="list-disc pl-6 space-y-2 text-foreground">
             {benchmarkLinks.map((item) => (
               <li key={item.href}>
@@ -117,7 +117,7 @@ export default function ContentPageLayout({
 
         <section className="mb-12" aria-labelledby="evidence-methodology-heading">
           <h2 id="evidence-methodology-heading" className="text-2xl font-bold mb-3 text-foreground">Evidence, References, and Methodology</h2>
-          <p className="text-foreground mb-4">Lancet Software India validates delivery outcomes through internal project benchmarking, post-implementation reviews, and alignment with <abbr title="National Institute of Standards and Technology">NIST</abbr> data governance guidance.</p>
+          <p className="text-foreground mb-4">Lancet Software India validates delivery outcomes through internal project benchmarking, post-implementation reviews, and alignment with <abbr title="National Institute of Standards and Technology">NIST</abbr> data governance guidance. Furthermore, industry-standard references are used to contextualize delivery benchmarks.</p>
           <div className="overflow-x-auto">
             <table className="w-full text-left border border-border rounded-lg">
               <thead className="bg-muted/40">

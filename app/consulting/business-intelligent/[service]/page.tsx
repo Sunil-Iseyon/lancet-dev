@@ -84,15 +84,15 @@ export default async function BusinessIntelligentServicePage({
   const faqItems = [
     {
       question: `What business outcomes can ${pageData.title} consulting deliver?`,
-      answer: `Our ${pageData.title} consulting focuses on faster reporting, stronger data quality, and better executive decision support.`
+      answer: `Lancet Software India's ${pageData.title} consulting focuses on faster reporting, stronger data quality, and better executive decision support.`
     },
     {
       question: `Does Lancet support end-to-end ${pageData.title} implementation?`,
-      answer: `Yes. We cover solution design, implementation, optimization, governance, and managed support for ${pageData.title}.`
+      answer: `Yes. Lancet Software India covers solution design, implementation, optimization, governance, and managed support for ${pageData.title}.`
     },
     {
       question: `Can ${pageData.title} be integrated with existing enterprise systems?`,
-      answer: `Yes. We integrate ${pageData.title} with data warehouses, cloud platforms, CRMs, ERPs, and operational data sources.`
+      answer: `Yes. Lancet Software India integrates ${pageData.title} with data warehouses, cloud platforms, CRMs, ERPs, and operational data sources.`
     },
   ]
 

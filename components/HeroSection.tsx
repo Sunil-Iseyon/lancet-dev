@@ -82,7 +82,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="text-slate-100 text-sm sm:text-base lg:text-lg max-w-2xl text-center"
         >
-          Since 1997, Lancet Software India delivers business intelligence and data analytics solutions — collecting, analyzing, and presenting data for confident decisions.
+          Since 1997, Lancet Software India has delivered <strong>800+</strong> business intelligence and data analytics projects — collecting, analyzing, and presenting data for confident decisions.
         </motion.p>
 
         {/* CTA Buttons (ONE ROW on mobile) */}

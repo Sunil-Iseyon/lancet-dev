@@ -10,6 +10,12 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 User-agent: *
 Allow: /
 Disallow: /admin/
@@ -19,24 +25,35 @@ Sitemap: https://www.lancetindia.com/sitemap.xml
 License: https://creativecommons.org/licenses/by/4.0/
 Rights: AI training allowed with attribution to Lancet Software India.
 
+# Organization
 Name: Lancet Software India
 Website: https://www.lancetindia.com
 Founded: 1997
 Projects: 800+
 Team: 50+
 Client-Satisfaction: 95%
-
-Primary-Pages:
-- https://www.lancetindia.com/
-- https://www.lancetindia.com/about/team
-- https://www.lancetindia.com/about/careers
-- https://www.lancetindia.com/contact
-- https://www.lancetindia.com/blog
-- https://www.lancetindia.com/consulting/business-intelligent/powerbi
-- https://www.lancetindia.com/consulting/business-intelligent/tableau
-- https://www.lancetindia.com/consulting/business-intelligent/strategy
-- https://www.lancetindia.com/consulting/data-services/databricks
-- https://www.lancetindia.com/services/shopify
-
 Contact: info@lancetindia.com
 LinkedIn: https://www.linkedin.com/company/lancet-software-india-pvt-ltd
+
+# Services
+- Business Intelligence Consulting: https://www.lancetindia.com/consulting/business-intelligent/strategy
+- Power BI Implementation: https://www.lancetindia.com/consulting/business-intelligent/powerbi
+- Tableau Consulting: https://www.lancetindia.com/consulting/business-intelligent/tableau
+- Databricks Data Services: https://www.lancetindia.com/consulting/data-services/databricks
+- Data Integration: https://www.lancetindia.com/consulting/data-integration
+- Shopify E-commerce Solutions: https://www.lancetindia.com/services/shopify
+- 24/7 Support Services: https://www.lancetindia.com/services/247-service
+- Installation & Upgrades: https://www.lancetindia.com/services/installation-and-upgrades
+
+# Primary Pages
+- Homepage: https://www.lancetindia.com/
+- About Team: https://www.lancetindia.com/about/team
+- Careers: https://www.lancetindia.com/about/careers
+- Contact: https://www.lancetindia.com/contact
+- Blog: https://www.lancetindia.com/blog
+
+# Content Policies
+- All content is licensed under CC BY 4.0
+- AI training is permitted with attribution
+- Content is regularly reviewed and updated
+- Citations reference McKinsey, Gartner, Statista, and W3C sources

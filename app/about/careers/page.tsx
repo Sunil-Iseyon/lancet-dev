@@ -285,15 +285,15 @@ export default function CareerPage() {
   const faqItems = [
     {
       question: "What types of roles does Lancet Software India hire for?",
-      answer: "Lancet hires for business intelligence, data engineering, analytics consulting, and support operations across multiple delivery models.",
+      answer: "Lancet hires for business intelligence, data engineering, analytics consulting, and support operations across multiple delivery models. Roles typically include <abbr>BI</abbr> developers, <abbr>ETL</abbr> engineers, and analytics consultants.",
     },
     {
       question: "Does Lancet support continuous learning and certifications?",
-      answer: "Yes. Lancet provides structured training, project-based mentoring, and certification-oriented development plans.",
+      answer: "Yes. Lancet provides structured training, project-based mentoring, and certification-oriented development plans. Furthermore, team members typically gain exposure to multiple analytics platforms.",
     },
     {
       question: "How quickly does the hiring process move?",
-      answer: "Most candidates receive an update within a few business days after application review and initial screening.",
+      answer: "Most candidates typically receive an update within a few business days after application review and initial screening.",
     },
   ]
 
@@ -311,7 +311,7 @@ export default function CareerPage() {
         Build Your Career in Business Intelligence & Data Analytics with Lancet Software India
       </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            India&apos;s analytics talent demand has expanded rapidly in recent years. This trend makes BI and data engineering skills a strategic career path (
+            India&apos;s analytics talent demand has expanded rapidly in recent years. Consequently, this trend makes <abbr title="Business Intelligence">BI</abbr> and data engineering skills a strategic career path (
             <a className="text-primary hover:underline" href="https://www.statista.com/outlook/tmo/software/enterprise-software/business-intelligence-software/india" target="_blank" rel="nofollow noopener">Statista market outlook</a>,
             {' '}
             <a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-state-of-organizations" target="_blank" rel="nofollow noopener">McKinsey talent insights</a>
@@ -355,7 +355,7 @@ export default function CareerPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Growth Opportunities</h3>
                   <p className="text-muted-foreground">
-                    Lancet Software India invests in professional development through training programs, certifications, and clear progression paths. The global analytics and BI market is projected to continue growing through 2026 (<a className="text-primary hover:underline" href="https://www.mordorintelligence.com/industry-reports/global-business-intelligence-bi-vendors-market-industry" target="_blank" rel="nofollow noopener">Mordor Intelligence</a>).
+                    Lancet Software India invests in professional development through training programs, certifications, and clear progression paths. Furthermore, the global analytics and <abbr title="Business Intelligence">BI</abbr> market is projected to continue growing through 2026 (<a className="text-primary hover:underline" href="https://www.mordorintelligence.com/industry-reports/global-business-intelligence-bi-vendors-market-industry" target="_blank" rel="nofollow noopener">Mordor Intelligence</a>).
                   </p>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function CareerPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Cutting-Edge Projects</h3>
                   <p className="text-muted-foreground">
-                    Lancet Software India delivers projects across modern BI and data engineering platforms. Industry analysts continue to rank modern analytics platforms as mission-critical enterprise technology (<a className="text-primary hover:underline" href="https://www.gartner.com/en/documents/6576602" target="_blank" rel="nofollow noopener">Gartner analytics coverage</a>).
+                    Lancet Software India delivers projects across modern <abbr title="Business Intelligence">BI</abbr> and data engineering platforms. Moreover, industry analysts continue to rank modern analytics platforms as mission-critical enterprise technology (<a className="text-primary hover:underline" href="https://www.gartner.com/en/documents/6576602" target="_blank" rel="nofollow noopener">Gartner analytics coverage</a>).
                   </p>
                 </div>
               </div>
@@ -405,8 +405,8 @@ export default function CareerPage() {
             <footer>— Peter Sondergaard, former Gartner executive</footer>
           </blockquote>
           <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
-            <p>"Data analytics can produce measurable business value when teams align people, process, and platforms."</p>
-            <footer>— McKinsey analytics insights</footer>
+            <p>"Data analytics can typically produce measurable business value when teams align people, process, and platforms."</p>
+            <footer>— McKinsey analytics research insights</footer>
           </blockquote>
         </section>
 
@@ -488,9 +488,9 @@ export default function CareerPage() {
         )}
 
         {/* Culture */}
-        <section ref={cultureRef} id="culture" className="mt-20 px-4 md:px-28" style={{ opacity: 0 }}>
+        <section ref={cultureRef} id="culture" className="mt-20 px-4 md:px-28" style={{ opacity: 0 }} aria-labelledby="culture-heading">
           <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
+              <h2 id="culture-heading" className="text-3xl md:text-4xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
               Our Culture
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -572,7 +572,7 @@ export default function CareerPage() {
               style={{ opacity: 0 }}
             >
               <div className="text-4xl font-bold text-primary mb-2">95%</div>
-              <p className="text-sm text-muted-foreground">Employee Satisfaction</p>
+              <p className="text-sm text-muted-foreground">Employee Satisfaction (internal survey)</p>
             </div>
           </div>
 
@@ -599,7 +599,7 @@ export default function CareerPage() {
                 </tr>
                 <tr className="border-t border-border">
                   <td className="p-3">Employee Satisfaction</td>
-                  <td className="p-3">95%</td>
+                  <td className="p-3">95% (according to internal surveys)</td>
                   <td className="p-3">Internal employee feedback review</td>
                 </tr>
               </tbody>

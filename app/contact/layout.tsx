@@ -4,7 +4,7 @@ import type React from "react"
 export const metadata: Metadata = {
   title: "Contact Business Intelligence & Data Analytics Team",
   description:
-    "Contact Lancet Software India for business intelligence, data analytics, and consulting support. Discuss your data goals with our team.",
+    "Contact Lancet Software India for business intelligence and data analytics consulting. Discuss BI strategy, data engineering, and enterprise analytics requirements with certified professionals.",
   alternates: {
     canonical: "https://www.lancetindia.com/contact",
     languages: {

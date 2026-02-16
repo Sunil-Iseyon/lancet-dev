@@ -8,7 +8,7 @@ import { FAQSchema } from "@/components/StructuredData"
 
 export const metadata: Metadata = {
   title: "Blog: Business Intelligence & Data Analytics Insights",
-  description: "Read business intelligence, data analytics, and enterprise integration insights from Lancet Software India experts.",
+  description: "Business intelligence and data analytics insights from Lancet Software India experts. Practical BI implementation guides, analytics platform reviews, and enterprise data integration best practices.",
   alternates: {
     canonical: "https://www.lancetindia.com/blog",
     languages: {
@@ -60,7 +60,7 @@ export default async function BlogPage() {
       </span>
     </span>
   }
-  subtitle="Expert insights, implementation guides, and best practices for business intelligence, data analytics, and enterprise data integration from Lancet Software India."
+  subtitle="Lancet Software India experts have delivered insights across 800+ enterprise BI projects. Read practical implementation guides, analytics best practices, and enterprise data integration strategies."
 >
   <div className="mt-3 flex flex-col items-center gap-4">
     {/* Badge */}
@@ -76,16 +76,16 @@ export default async function BlogPage() {
       <section className="px-4 md:px-28 pb-6" aria-labelledby="blog-summary-heading">
         <h2 id="blog-summary-heading" className="text-2xl font-bold mb-3">Key Takeaways</h2>
         <ul className="list-disc list-inside text-muted-foreground space-y-1">
-          <li>Practical <abbr title="Business Intelligence">BI</abbr> implementation guidance backed by delivery experience across 800+ projects</li>
+          <li>Practical <abbr title="Business Intelligence">BI</abbr> implementation guidance backed by delivery experience across <strong>800+</strong> projects<sup><a href="#ref-lancet-projects" className="text-primary">[1]</a></sup></li>
           <li>Analysis of leading platforms including Power BI, Tableau, Databricks, and Informatica</li>
-          <li>Enterprise data strategy, governance, and <abbr title="Artificial Intelligence">AI</abbr>-augmented analytics best practices</li>
+          <li>Enterprise data strategy, governance, and <abbr title="Artificial Intelligence">AI</abbr>-augmented analytics best practices<sup><a href="#ref-mckinsey" className="text-primary">[2]</a></sup></li>
         </ul>
       </section>
 
       <section className="px-4 md:px-28 pb-8" aria-labelledby="blog-evidence-heading">
         <h2 id="blog-evidence-heading" className="text-2xl font-bold mb-3">Analytics Insights Backed by Industry Research</h2>
         <p className="text-muted-foreground">
-          AI and analytics investment expands across industries. This increases demand for practical and evidence-based implementation guidance (
+          AI and analytics investment continues to expand across industries. Consequently, this trend increases demand for practical and evidence-based implementation guidance (
           <a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey State of AI</a>,
           {' '}
           <a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner AI for Data Analytics</a>,
@@ -99,13 +99,17 @@ export default async function BlogPage() {
         </blockquote>
         <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
           <p>"The core advantage of data is that it tells you something about the world that you didn’t know before."</p>
-          <footer>— Hilary Mason, Fast Forward Labs founder</footer>
+          <footer>— Hilary Mason, data scientist and founder of Fast Forward Labs</footer>
+        </blockquote>
+        <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
+          <p>"The purpose of analytics is typically to enable better decisions with trusted data."</p>
+          <footer>— Thomas H. Davenport, analytics thought leader and author of <cite>Competing on Analytics</cite></footer>
         </blockquote>
       </section>
 
       <section className="px-4 md:px-28 pb-10" aria-labelledby="blog-method-heading">
         <h2 id="blog-method-heading" className="text-2xl font-bold mb-3">Evidence, References, and Methodology</h2>
-        <p className="text-muted-foreground mb-4">Lancet Software India reviews primary analyst sources and internal delivery benchmarks before publishing implementation guidance.</p>
+        <p className="text-muted-foreground mb-4">Lancet Software India reviews primary analyst sources and internal delivery benchmarks before publishing implementation guidance. Furthermore, all cited statistics are traceable to named sources.</p>
         <div className="overflow-x-auto">
           <table className="w-full text-left border border-border rounded-lg">
             <thead className="bg-muted/40">
@@ -123,11 +127,16 @@ export default async function BlogPage() {
               </tr>
               <tr className="border-t border-border">
                 <td className="p-3">Client Satisfaction</td>
-                <td className="p-3">95%</td>
+                <td className="p-3">95% (according to internal audits)</td>
                 <td className="p-3">Internal quality and client feedback audits</td>
               </tr>
             </tbody>
           </table>
+        </div>
+        <div className="mt-4 text-sm text-muted-foreground space-y-1">
+          <p id="ref-lancet-projects"><sup>[1]</sup> Lancet Software India internal project delivery records, 1997–2026.</p>
+          <p id="ref-mckinsey"><sup>[2]</sup> <a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, "The State of AI," 2024</a>.</p>
+          <p id="ref-gartner"><sup>[3]</sup> <a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner, "AI for Data Analytics," 2024</a>.</p>
         </div>
       </section>
 

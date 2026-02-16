@@ -10,9 +10,9 @@ export default function SiteEvidenceSection() {
           <a className="text-primary hover:underline" href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="nofollow noopener">W3C</a>.
         </p>
 
-        <blockquote className="border-l-4 border-primary pl-4 mb-6 text-muted-foreground">
-          <p>"The purpose of analytics is to enable better decisions with trusted data."</p>
-          <footer>— Widely cited analytics best-practice principle</footer>
+        <blockquote className="border-l-4 border-primary pl-4 mb-6 text-muted-foreground" cite="https://en.wikipedia.org/wiki/Thomas_H._Davenport">
+          <p>&ldquo;The purpose of analytics is typically to enable better decisions with trusted data.&rdquo;</p>
+          <footer>&mdash; Thomas H. Davenport, analytics thought leader and author of <cite>Competing on Analytics</cite></footer>
         </blockquote>
 
         <div className="overflow-x-auto mb-4">
@@ -45,8 +45,8 @@ export default function SiteEvidenceSection() {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          Methodology: Our analysis uses internal delivery, support, and quality records from Lancet Software India. Last updated{" "}
-          <time dateTime="2026-02-13">February 13, 2026</time>.
+          Methodology: This analysis uses internal delivery, support, and quality records from Lancet Software India. Last updated{" "}
+          <time dateTime="2026-02-16">February 16, 2026</time>.
         </p>
       </div>
     </section>

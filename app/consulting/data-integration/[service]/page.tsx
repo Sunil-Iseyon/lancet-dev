@@ -88,11 +88,11 @@ export default async function DataIntegrationServicePage({
     },
     {
       question: `Can ${pageData.title} connect with existing enterprise systems?`,
-      answer: `Yes. We integrate ${pageData.title} with cloud warehouses, CRMs, ERPs, and analytics tools with governed access.`,
+      answer: `Yes. Lancet Software India integrates ${pageData.title} with cloud warehouses, CRMs, ERPs, and analytics tools with governed access.`,
     },
     {
       question: `How is data governance handled in integration projects?`,
-      answer: `We implement validation rules, lineage visibility, role-based access, and operational monitoring across delivery environments.`,
+      answer: `Lancet Software India implements validation rules, lineage visibility, role-based access, and operational monitoring across delivery environments.`,
     },
   ]
 

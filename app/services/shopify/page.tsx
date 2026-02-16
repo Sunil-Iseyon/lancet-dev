@@ -9,7 +9,7 @@ const publishedDate = "2026-02-13"
 
 export const metadata: Metadata = {
   title: 'Shopify Solutions: Custom Development & Integrations | Lancet Software India',
-  description: 'Shopify business intelligence and e-commerce solutions from Lancet Software India. Custom development, integrations, performance optimization, and managed support.',
+  description: 'Shopify solutions from Lancet Software India: custom Shopify development, store design, payment integrations, and managed e-commerce support. Build and scale your Shopify store with expert consulting.',
   openGraph: {
     title: 'Shopify Solutions: Custom Development & Integrations',
     description: 'Shopify business intelligence and e-commerce solutions with custom development and integrations.',
@@ -49,11 +49,11 @@ export default async function ShopifyPage() {
     },
     {
       question: "Can Lancet integrate Shopify with ERP and CRM systems?",
-      answer: "Yes. We integrate Shopify with ERP, CRM, payment gateways, shipping tools, and analytics platforms for near real-time operations.",
+      answer: "Yes. Lancet Software India integrates Shopify with ERP, CRM, payment gateways, shipping tools, and analytics platforms for near real-time operations.",
     },
     {
       question: "Do you provide ongoing Shopify support after launch?",
-      answer: "Yes. We provide managed support, performance monitoring, security updates, and feature enhancements after go-live.",
+      answer: "Yes. Lancet Software India provides managed support, performance monitoring, security updates, and feature enhancements after go-live.",
     },
   ]
 

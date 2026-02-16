@@ -27,11 +27,11 @@ export default function AboutPage() {
   const faqItems = [
     {
       question: "What expertise does the Lancet team provide?",
-      answer: "The team provides expertise across business intelligence, data engineering, dashboard development, and enterprise analytics consulting.",
+      answer: "The team typically provides expertise across business intelligence, data engineering, dashboard development, and enterprise analytics consulting.",
     },
     {
       question: "Does Lancet leadership support strategic BI roadmaps?",
-      answer: "Yes. Leadership and senior consultants support roadmap planning, governance setup, and phased enterprise rollout.",
+      answer: "Yes. Leadership and senior consultants generally support roadmap planning, governance setup, and phased enterprise rollout.",
     },
     {
       question: "How does Lancet maintain delivery quality?",
@@ -55,7 +55,7 @@ export default function AboutPage() {
             Business Intelligence &amp; Data Analytics Experts
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Organizations with strong analytics leadership are more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>). The Lancet Software India team has delivered <abbr title="Business Intelligence">BI</abbr> and data programs since 2010.
+            Organizations with strong analytics leadership are generally more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>). Consequently, the Lancet Software India team has delivered <abbr title="Business Intelligence">BI</abbr> and data programs since 2010.
           </p>
           <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
         </motion.div>
@@ -72,13 +72,13 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We believe that data is the foundation of modern business success. Our mission is to empower organizations
-              of all sizes with cutting-edge business intelligence solutions that transform raw data into strategic
+              Lancet Software India believes that data is the foundation of modern business success. The mission is to empower organizations
+              of all sizes with business intelligence solutions. These solutions transform raw data into strategic
               advantages. Data quality and governance are central to this mission (<a className="text-primary hover:underline" href="https://www.nist.gov/publications/data-quality-foundations-ai-and-analytics" target="_blank" rel="nofollow noopener">NIST guidance</a>).
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Since our inception in 2010, we've been dedicated to helping businesses make smarter decisions through
-              advanced analytics, predictive modeling, and comprehensive data visualization.
+              Since inception in 2010, the team has been dedicated to helping businesses make smarter decisions.
+              This includes advanced analytics, predictive modeling, and comprehensive data visualization.
             </p>
           </div>
           <div className="relative bg-linear-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 overflow-hidden group">
@@ -245,9 +245,9 @@ export default function AboutPage() {
                 {/* Bottom section - text aligned */}
                 <div className="px-6 md:px-8 pt-4 md:pt-6 pb-6 md:pb-8">
                   <p className="text-base text-muted-foreground leading-relaxed text-left">
-                    Our diverse team of data scientists, engineers, and consultants bring decades of combined experience
-                    in business intelligence, data analytics, and enterprise software solutions. We're passionate about
-                    helping our clients succeed.
+                    The diverse team of data scientists, engineers, and consultants brings decades of combined experience
+                    in business intelligence, data analytics, and enterprise software solutions. The Lancet team is passionate about
+                    helping clients succeed.
                   </p>
                 </div>
               </div>

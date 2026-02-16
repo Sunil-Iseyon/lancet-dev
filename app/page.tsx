@@ -42,7 +42,7 @@ export default async function Home() {
       <AnimatedServicesGrid 
         services={services}
         title="Explore Our Solutions"
-        subtitle="Transform your business with our cutting-edge data solutions and expert consulting services"
+        subtitle="Lancet Software India has delivered 800+ BI and data analytics projects since 1997. Transform your business with cutting-edge data solutions and expert consulting services."
       />
       <FeaturesSection features={features} />
       <StatsSection/>
@@ -53,10 +53,10 @@ export default async function Home() {
         <div className="mx-auto max-w-6xl">
           <h2 id="home-evidence-heading" className="text-2xl font-bold mb-3">Why Data-Led Transformation Matters</h2>
           <p className="text-muted-foreground">
-            According to McKinsey research, data-driven organizations are 23× more likely to acquire customers and 6× more likely to retain them (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>).
-            Global digital commerce crossed <strong>$6.4 trillion in 2025</strong>, increasing demand for reliable <abbr title="Business Intelligence">BI</abbr> and data analytics capabilities (<a className="text-primary hover:underline" href="https://www.shopify.com/blog/global-ecommerce-sales" target="_blank" rel="nofollow noopener">Shopify</a>).
-            Gartner reports that organizations investing in <abbr title="Artificial Intelligence">AI</abbr>-augmented analytics typically see 25% faster time-to-insight (<a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner</a>).
-            The U.S. Bureau of Labor Statistics projects 35% growth in data science roles through 2032 (<a className="text-primary hover:underline" href="https://www.bls.gov/ooh/math/data-scientists.htm" target="_blank" rel="nofollow noopener">BLS.gov</a>).
+            According to McKinsey research, data-driven organizations are typically 23× more likely to acquire customers and 6× more likely to retain them (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>).
+            Furthermore, global digital commerce crossed <strong>$6.4 trillion in 2025</strong>, increasing demand for reliable <abbr title="Business Intelligence">BI</abbr> and data analytics capabilities (<a className="text-primary hover:underline" href="https://www.shopify.com/blog/global-ecommerce-sales" target="_blank" rel="nofollow noopener">Shopify</a>).
+            Consequently, Gartner reports that organizations investing in <abbr title="Artificial Intelligence">AI</abbr>-augmented analytics typically see 25% faster time-to-insight (<a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner</a>).
+            Additionally, the U.S. Bureau of Labor Statistics projects 35% growth in data science roles through 2032 (<a className="text-primary hover:underline" href="https://www.bls.gov/ooh/math/data-scientists.htm" target="_blank" rel="nofollow noopener">BLS.gov</a>).
             Last refreshed <time dateTime="2026-02-16">February 16, 2026</time>.
           </p>
           <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground" cite="https://en.wikipedia.org/wiki/W._Edwards_Deming">

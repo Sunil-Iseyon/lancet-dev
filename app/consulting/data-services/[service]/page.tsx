@@ -73,15 +73,15 @@ export default async function DataServicesServicePage({
   const faqItems = [
     {
       question: `What is included in your ${pageData.title} service delivery?`,
-      answer: `We provide architecture planning, implementation, security, performance tuning, and long-term managed support for ${pageData.title}.`
+      answer: `Lancet Software India provides architecture planning, implementation, security, performance tuning, and long-term managed support for ${pageData.title}.`
     },
     {
       question: `Can ${pageData.title} be integrated with our current data stack?`,
-      answer: `Yes. We integrate ${pageData.title} with cloud platforms, databases, BI tools, and enterprise applications with minimal disruption.`
+      answer: `Yes. Lancet Software India integrates ${pageData.title} with cloud platforms, databases, BI tools, and enterprise applications with minimal disruption.`
     },
     {
       question: `How does Lancet ensure data quality and governance?`,
-      answer: `We implement validation rules, lineage controls, access governance, and monitoring processes to maintain trusted enterprise data.`
+      answer: `Lancet Software India implements validation rules, lineage controls, access governance, and monitoring processes to maintain trusted enterprise data.`
     },
   ]
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Lancet Software India"
   },
   description:
-    "Transform your data into actionable insights with Lancet Software India. Since 1997, delivering professional business intelligence, data analytics, and consulting solutions. 800+ BI projects completed with 95% client satisfaction.",
+    "Lancet Software India provides business intelligence and data analytics solutions. Since 1997, delivering BI consulting, data engineering, and enterprise analytics across Power BI, Tableau, and Databricks. 800+ projects completed with 95% client satisfaction.",
   keywords: [
     "business intelligence",
     "data analytics",
@@ -114,7 +114,8 @@ export default function RootLayout({
     "foundingDate": "1997",
     "knowsLanguage": "en",
     "sameAs": [
-      "https://www.linkedin.com/company/lancet-software-india-pvt-ltd"
+      "https://www.linkedin.com/company/lancet-software-india-pvt-ltd",
+      "https://www.lancetindia.com"
     ],
     "address": {
       "@type": "PostalAddress",
@@ -141,6 +142,11 @@ export default function RootLayout({
         "@type": "ContactAction",
         "name": "Contact Lancet Software India",
         "target": "https://www.lancetindia.com/contact"
+      },
+      {
+        "@type": "ReadAction",
+        "name": "Read BI & Analytics Blog",
+        "target": "https://www.lancetindia.com/blog"
       }
     ]
   };
@@ -191,7 +197,7 @@ export default function RootLayout({
     },
     "speakable": {
       "@type": "SpeakableSpecification",
-      "cssSelector": ["h1", "h2"]
+      "cssSelector": ["h1", "h2", "h3"]
     },
     "inLanguage": "en"
   };
@@ -203,7 +209,8 @@ export default function RootLayout({
       "name": "Business Intelligence",
       "alternateName": ["BI", "Analytics Intelligence"],
       "description": "Business intelligence (BI) is the practice of transforming operational and historical data into insights for decision making.",
-      "inDefinedTermSet": "https://www.lancetindia.com"
+      "inDefinedTermSet": "https://www.lancetindia.com",
+      "sameAs": "https://en.wikipedia.org/wiki/Business_intelligence"
     },
     {
       "@context": "https://schema.org",
@@ -219,7 +226,8 @@ export default function RootLayout({
       "name": "Extract, Transform, Load",
       "alternateName": ["ETL"],
       "description": "Extract, Transform, Load (ETL) is a data integration process that extracts data from sources, transforms it into a usable format, and loads it into a target system.",
-      "inDefinedTermSet": "https://www.lancetindia.com"
+      "inDefinedTermSet": "https://www.lancetindia.com",
+      "sameAs": "https://en.wikipedia.org/wiki/Extract,_transform,_load"
     }
   ];
 
