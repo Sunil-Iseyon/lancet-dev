@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Sansation, Space_Grotesk, Ubuntu } from "next/font/google"
+import { Space_Grotesk, Ubuntu } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import NextTopLoader from "nextjs-toploader"
 import "./globals.css"
@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 import SmoothScrollProvider from "@/components/smooth-scroll-provider"
 import SiteEvidenceSection from "@/components/SiteEvidenceSection"
 
-const _Sansation = Sansation({ subsets: ["latin"], weight: ["400", "700"] })
+const _SpaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "700"] })
 const _Ubuntu = Ubuntu({ subsets: ["latin"], weight: ["300", "400", "500", "700"] })
 // const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
@@ -217,7 +217,7 @@ export default function RootLayout({
         />
         <style>{`
           h1, h2, h3, h4, h5, h6 {
-            font-family: ${_Sansation.style.fontFamily}, sans-serif;
+            font-family: ${_SpaceGrotesk.style.fontFamily}, sans-serif;
           }
         `}</style>
         <Navbar />

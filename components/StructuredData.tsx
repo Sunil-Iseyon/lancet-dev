@@ -181,6 +181,8 @@ interface ArticleSchemaProps {
   datePublished: string
   dateModified?: string
   author?: string
+  authorUrl?: string
+  authorSameAs?: string[]
   url: string
   image?: string
 }
@@ -191,6 +193,8 @@ export function ArticleSchema({
   datePublished,
   dateModified,
   author = 'Lancet Software India',
+  authorUrl,
+  authorSameAs,
   url,
   image,
 }: ArticleSchemaProps) {
@@ -202,9 +206,15 @@ export function ArticleSchema({
     datePublished,
     dateModified: dateModified || datePublished,
     author: {
-      '@type': 'Organization',
+      '@type': 'Person',
       name: author,
-      url: 'https://www.lancetindia.com',
+      ...(authorUrl && { url: authorUrl }),
+      ...(authorSameAs && authorSameAs.length > 0 && { sameAs: authorSameAs }),
+      affiliation: {
+        '@type': 'Organization',
+        name: 'Lancet Software India',
+        url: 'https://www.lancetindia.com',
+      },
     },
     publisher: {
       '@type': 'Organization',

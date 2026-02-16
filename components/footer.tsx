@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="md:flex gap-20 mb-8">
 
           {/* Logo */}
-         <motion.div variants={fadeUp} className="md:col-span-1">
+          <motion.div variants={fadeUp} className="md:col-span-1">
             <Link href="/">
               <Image
                 src="/lancet-logo-white.png"
@@ -65,8 +65,9 @@ export default function Footer() {
 
           {/* Head Office Address */}
           <motion.div variants={fadeUp} className="text-center sm:text-left">
+            <h2 className="font-semibold mb-3 sm:mb-4 text-base">Our Offices</h2>
             <h3 className="font-semibold mb-3 sm:mb-4 text-base">Head Office</h3>
-            <div className="text-xs sm:text-sm leading-relaxed space-y-1 sm:space-y-2">
+            <address className="not-italic text-xs sm:text-sm leading-relaxed space-y-1 sm:space-y-2">
               <p className="font-medium mb-1 sm:mb-2">LANCET SOFTWARE INDIA PVT. LTD.</p>
               <p>
                 The Empyrean, No 517, Phase II, Anchemuskur Village,<br />
@@ -90,13 +91,13 @@ export default function Footer() {
                   {contactInfo.headOfficePhone}
                 </span>
               </p>
-            </div>
+            </address>
           </motion.div>
 
           {/* Branch Office Address */}
           <motion.div variants={fadeUp} className="text-center sm:text-left">
             <h3 className="font-semibold mb-3 sm:mb-4 text-base">Branch Office</h3>
-            <div className="text-xs sm:text-sm leading-relaxed space-y-1 sm:space-y-2">
+            <address className="not-italic text-xs sm:text-sm leading-relaxed space-y-1 sm:space-y-2">
               <p className="font-medium mb-1 sm:mb-2">LANCET SOFTWARE INDIA PVT. LTD.</p>
               <p>
                 1st Floor, DM-12, DL Chowk, Basanti Nagar, <br />
@@ -114,7 +115,7 @@ export default function Footer() {
                   {contactInfo.branchPhone2}
                 </span>
               </p>
-            </div>
+            </address>
           </motion.div>
 
           {/* Company Menu */}

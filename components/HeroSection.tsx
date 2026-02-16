@@ -25,7 +25,7 @@ export default function HeroSection() {
   {/* Background Image */}
   <Image
     src="/lancetBg.webp"
-    alt="Hero background"
+    alt="Hero background depicting data artistry for Lancet Software India business intelligence and data analytics solutions"
     fill
     priority
     quality={85}
@@ -51,6 +51,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            aria-label="Organizing data is an art for business intelligence and data analytics"
             className="flex flex-col items-center justify-center gap-2 sm:gap-3"
           >
             <TextGenerateEffect
@@ -70,6 +71,7 @@ export default function HeroSection() {
                 "bg-gradient-to-r from-yellow-500 via-yellow-300 to-white bg-clip-text text-transparent",
               ]}
             />
+            <span className="sr-only">Organizing data is an art for business intelligence and data analytics</span>
           </motion.h1>
         </div>
 
@@ -122,7 +124,7 @@ export default function HeroSection() {
               key={stat.label}
               className="flex flex-col items-center p-3 sm:p-4 rounded-lg backdrop-blur-md border border-white/20 hover:border-white/30 transition-all"
             >
-              <div className="text-xl sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent mb-1">
+              <div className="text-xl sm:text-3xl font-bold bg-linear-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent mb-1">
                 {stat.value}
               </div>
               <div className="text-[10px] sm:text-sm text-slate-200 font-medium text-center">
