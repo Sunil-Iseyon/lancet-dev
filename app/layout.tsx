@@ -130,7 +130,19 @@ export default function RootLayout({
       "ratingValue": "4.8",
       "ratingCount": "800",
       "bestRating": "5"
-    }
+    },
+    "potentialAction": [
+      {
+        "@type": "ViewAction",
+        "name": "View Business Intelligence Services",
+        "target": "https://www.lancetindia.com/consulting/business-intelligent/strategy"
+      },
+      {
+        "@type": "ContactAction",
+        "name": "Contact Lancet Software India",
+        "target": "https://www.lancetindia.com/contact"
+      }
+    ]
   };
 
   const websiteSchema = {
@@ -143,7 +155,12 @@ export default function RootLayout({
       "name": "Lancet Software India",
       "url": "https://www.lancetindia.com"
     },
-    "inLanguage": "en"
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.lancetindia.com/blog?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   };
 
   const webpageSchema = {
@@ -154,8 +171,14 @@ export default function RootLayout({
     "datePublished": "2026-02-13",
     "dateModified": "2026-02-13",
     "author": {
-      "@type": "Organization",
-      "name": "Lancet Software India",
+      "@type": "Person",
+      "name": "Thomas Niccum",
+      "jobTitle": "President and CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Lancet Software India",
+        "url": "https://www.lancetindia.com"
+      },
       "sameAs": ["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"]
     },
     "publisher": {
@@ -173,14 +196,32 @@ export default function RootLayout({
     "inLanguage": "en"
   };
 
-  const terminologySchema = {
-    "@context": "https://schema.org",
-    "@type": "DefinedTerm",
-    "name": "Business Intelligence",
-    "alternateName": ["BI", "Analytics Intelligence"],
-    "description": "Business intelligence is the practice of transforming operational and historical data into insights for decision making.",
-    "inDefinedTermSet": "https://www.lancetindia.com"
-  };
+  const terminologySchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "name": "Business Intelligence",
+      "alternateName": ["BI", "Analytics Intelligence"],
+      "description": "Business intelligence (BI) is the practice of transforming operational and historical data into insights for decision making.",
+      "inDefinedTermSet": "https://www.lancetindia.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "name": "Generative Engine Optimization",
+      "alternateName": ["GEO"],
+      "description": "Generative Engine Optimization (GEO) is the practice of optimizing web content for AI-driven search engines and large language models.",
+      "inDefinedTermSet": "https://www.lancetindia.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "name": "Extract, Transform, Load",
+      "alternateName": ["ETL"],
+      "description": "Extract, Transform, Load (ETL) is a data integration process that extracts data from sources, transforms it into a usable format, and loads it into a target system.",
+      "inDefinedTermSet": "https://www.lancetindia.com"
+    }
+  ];
 
   return (
     <html lang="en">
@@ -203,12 +244,16 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(terminologySchema) }}
-        />
+        {terminologySchema.map((term, i) => (
+          <script
+            key={`term-${i}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(term) }}
+          />
+        ))}
       </head>
       <body className={`antialiased ${_Ubuntu.className}`}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:bg-background focus:text-foreground focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to main content</a>
         <NextTopLoader 
           color="#2563eb"
           height={3}

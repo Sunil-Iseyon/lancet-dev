@@ -64,7 +64,7 @@ export default function PartnersClient({ partners }: PartnersClientProps) {
             <div className="flex flex-col items-center justify-center py-4">
               <img
                 src={item.logo || "/placeholder.svg"}
-                alt={`${item.name} logo`}
+                alt={`${item.name} - Lancet Software India technology partner logo`}
                 className="md:h-12 h-7 w-auto mb-2"
                 loading="lazy"
               />

@@ -20,7 +20,7 @@ const stats = [
   {
     number: "10k+",
     raw: 10000,
-    label: "Over 10 thousands hours of services performed",
+    label: "Over 10 thousand hours of services performed",
   },
 ]
 
@@ -53,7 +53,7 @@ export default function StatsSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-8 md:py-12 px-4 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-8 md:py-12 px-4 bg-white relative overflow-hidden" aria-labelledby="stats-heading">
       <motion.div
         className="absolute top-0 right-0 w-96 h-96 bg-[#007EB0]/5 rounded-full blur-3xl"
         animate={{
@@ -93,6 +93,7 @@ export default function StatsSection() {
         >
           <motion.h2 
             ref={titleRef}
+            id="stats-heading"
             initial={{ opacity: 0, y: 60 }}
             animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
             transition={{ duration: 1, ease: "easeOut" }}

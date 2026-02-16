@@ -52,10 +52,10 @@ export default function AboutPage() {
           className="text-center space-y-4"
         >
           <h1 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">
-            About Lancet
+            Business Intelligence &amp; Data Analytics Experts
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Organizations with strong analytics leadership are more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey</a>). Lancet Software India has delivered BI and data programs since 2010.
+            Organizations with strong analytics leadership are more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>). The Lancet Software India team has delivered <abbr title="Business Intelligence">BI</abbr> and data programs since 2010.
           </p>
           <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
         </motion.div>
@@ -151,9 +151,9 @@ export default function AboutPage() {
           </div>
         </motion.div>
         <div className="px-4 md:px-28 mt-8">
-          <blockquote className="border-l-4 border-primary pl-4 text-muted-foreground">
-            <p>"High-quality analytics programs combine domain expertise, governance, and continuous optimization."</p>
-            <footer>— Industry best-practice perspective</footer>
+          <blockquote className="border-l-4 border-primary pl-4 text-muted-foreground" cite="https://hbr.org/2020/02/use-data-to-accelerate-your-business-strategy">
+            <p>&ldquo;High-quality analytics programs combine domain expertise, governance, and continuous optimization.&rdquo;</p>
+            <footer>&mdash; Harvard Business Review, analytics leadership perspective</footer>
           </blockquote>
         </div>
         <motion.section
@@ -171,17 +171,17 @@ export default function AboutPage() {
               {
                 title: "Innovation",
                 description:
-                  "We constantly push the boundaries of what's possible in BI technology.",
+                  "The Lancet team constantly pushes the boundaries of what\u2019s possible in BI technology, applying emerging tools and methods to enterprise analytics.",
               },
               {
                 title: "Integrity",
                 description:
-                  "We build trust through transparent communication and reliable solutions.",
+                  "Lancet Software India builds trust through transparent communication, reliable solutions, and adherence to data governance standards.",
               },
               {
                 title: "Excellence",
                 description:
-                  "We deliver exceptional results that exceed client expectations.",
+                  "Lancet delivers exceptional results that typically exceed client expectations, backed by 800+ project delivery records.",
               },
             ].map((value) => (
               <div
@@ -214,7 +214,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src="/chandan.png"
-                  alt="Chandan"
+                  alt="Chandan Pandey, Managing Director and Co-Founder of Lancet Software India"
                   className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-2xl mx-auto shadow-lg ring-4 ring-white dark:ring-slate-800 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -259,7 +259,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src="/tom.jpg"
-                  alt="Thomas"
+                  alt="Thomas Niccum, President and CEO of Lancet Software India"
                   className="relative w-48 h-48 md:w-64 md:h-64 object-cover rounded-2xl mx-auto shadow-lg ring-4 ring-white dark:ring-slate-800 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -278,8 +278,10 @@ export default function AboutPage() {
         headline="Team: Business Intelligence & Data Analytics Experts at Lancet Software India"
         description="Meet the leadership and consulting experts delivering BI, analytics, and enterprise data solutions at Lancet Software India."
         datePublished="2026-02-13"
-        dateModified="2026-02-13"
-        author="Lancet Software India"
+        dateModified="2026-02-16"
+        author="Thomas Niccum"
+        authorUrl="https://www.lancetindia.com/about/team"
+        authorSameAs={["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"]}
         url={pageUrl}
       />
       <FAQSchema questions={faqItems} />

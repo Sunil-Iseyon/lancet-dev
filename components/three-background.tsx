@@ -10,10 +10,14 @@ interface ThreeBackgroundProps {
 
 export default function ThreeBackground({ particleCount = 1000, className = "" }: ThreeBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null)
-  const sceneRef = useRef<THREE.Scene | null>(null)
-  const cameraRef = useRef<THREE.PerspectiveCamera | null>(null)
-  const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
-  const particlesRef = useRef<THREE.Points | null>(null)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const sceneRef = useRef<any>(null)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const cameraRef = useRef<any>(null)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const rendererRef = useRef<any>(null)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const particlesRef = useRef<any>(null)
   const frameRef = useRef<number>(0)
 
   useEffect(() => {
@@ -115,7 +119,7 @@ export default function ThreeBackground({ particleCount = 1000, className = "" }
       }
 
       // Animate cubes
-      scene.children.forEach((child) => {
+      scene.children.forEach((child: any) => {
         if (child instanceof THREE.Mesh) {
           child.rotation.x += 0.005
           child.rotation.y += 0.005

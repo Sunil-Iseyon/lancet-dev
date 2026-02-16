@@ -31,15 +31,19 @@ export default async function BlogPage() {
   const faqItems = [
     {
       question: "What topics does the Lancet blog cover?",
-      answer: "The blog covers business intelligence, analytics platforms, data engineering, and enterprise transformation practices.",
+      answer: "The blog covers business intelligence, analytics platforms (Power BI, Tableau, Databricks), data engineering, ETL processes, and enterprise transformation practices.",
     },
     {
       question: "How often is blog content refreshed?",
-      answer: "Content is reviewed and refreshed regularly based on platform updates and client delivery learnings.",
+      answer: "Content is reviewed and refreshed regularly based on platform updates, industry analyst reports, and client delivery learnings.",
     },
     {
       question: "Are insights based on practical implementation experience?",
-      answer: "Yes. Articles are informed by implementation and optimization work across enterprise BI and analytics programs.",
+      answer: "Yes. Articles are informed by implementation and optimization work across 800+ enterprise BI and analytics programs since 1997.",
+    },
+    {
+      question: "What is data analytics?",
+      answer: "Data analytics is the process of examining datasets to draw conclusions, typically using specialized platforms and statistical methods to support business decisions.",
     },
   ]
 
@@ -52,11 +56,11 @@ export default async function BlogPage() {
     <span className="relative inline-block">
       <span className="absolute inset-0 blur-2xl bg-primary/20 rounded-full" />
       <span className="relative bg-linear-to-r from-slate-900 via-primary to-slate-900 bg-clip-text text-transparent">
-        Our Blog
+        Business Intelligence &amp; Data Analytics Insights
       </span>
     </span>
   }
-  subtitle="Insights, tips, and updates from our experts in business intelligence, data integration, and analytics."
+  subtitle="Expert insights, implementation guides, and best practices for business intelligence, data analytics, and enterprise data integration from Lancet Software India."
 >
   <div className="mt-3 flex flex-col items-center gap-4">
     {/* Badge */}
@@ -68,6 +72,15 @@ export default async function BlogPage() {
     <div className="h-px w-24 bg-linear-to-r from-transparent via-primary/40 to-transparent" />
   </div>
 </PageHero>
+
+      <section className="px-4 md:px-28 pb-6" aria-labelledby="blog-summary-heading">
+        <h2 id="blog-summary-heading" className="text-2xl font-bold mb-3">Key Takeaways</h2>
+        <ul className="list-disc list-inside text-muted-foreground space-y-1">
+          <li>Practical <abbr title="Business Intelligence">BI</abbr> implementation guidance backed by delivery experience across 800+ projects</li>
+          <li>Analysis of leading platforms including Power BI, Tableau, Databricks, and Informatica</li>
+          <li>Enterprise data strategy, governance, and <abbr title="Artificial Intelligence">AI</abbr>-augmented analytics best practices</li>
+        </ul>
+      </section>
 
       <section className="px-4 md:px-28 pb-8" aria-labelledby="blog-evidence-heading">
         <h2 id="blog-evidence-heading" className="text-2xl font-bold mb-3">Analytics Insights Backed by Industry Research</h2>

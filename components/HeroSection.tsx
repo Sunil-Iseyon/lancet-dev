@@ -51,7 +51,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            aria-label="Organizing data is an art for business intelligence and data analytics"
+            aria-label="Business Intelligence and Data Analytics Solutions - Organizing data is an art"
             className="flex flex-col items-center justify-center gap-2 sm:gap-3"
           >
             <TextGenerateEffect
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 "bg-gradient-to-r from-yellow-500 via-yellow-300 to-white bg-clip-text text-transparent",
               ]}
             />
-            <span className="sr-only">Organizing data is an art for business intelligence and data analytics</span>
+            <span className="sr-only">Business Intelligence and Data Analytics Solutions by Lancet Software India — Organizing data is an art</span>
           </motion.h1>
         </div>
 
@@ -82,8 +82,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="text-slate-100 text-sm sm:text-base lg:text-lg max-w-2xl text-center"
         >
-          We are obsessed with collecting, analyzing and presenting data for your
-          Business Intelligence needs.
+          Since 1997, Lancet Software India delivers business intelligence and data analytics solutions — collecting, analyzing, and presenting data for confident decisions.
         </motion.p>
 
         {/* CTA Buttons (ONE ROW on mobile) */}
@@ -116,13 +115,15 @@ export default function HeroSection() {
           className="grid grid-cols-3 gap-3 sm:gap-6 mt-6 sm:mt-8 w-full max-w-3xl"
         >
           {[
-            { value: "800+", label: "Projects Delivered" },
-            { value: "98%", label: "Client Satisfaction" },
-            { value: "24/7", label: "Support Available" },
+            { value: "800+", label: "Projects Delivered", srLabel: "Over 800 business intelligence projects delivered, based on internal delivery records" },
+            { value: "98%", label: "Client Satisfaction", srLabel: "Up to 98% client satisfaction, according to internal client feedback surveys" },
+            { value: "24/7", label: "Support Available", srLabel: "24/7 managed support services available for enterprise clients" },
           ].map((stat) => (
             <div
               key={stat.label}
               className="flex flex-col items-center p-3 sm:p-4 rounded-lg backdrop-blur-md border border-white/20 hover:border-white/30 transition-all"
+              role="figure"
+              aria-label={stat.srLabel}
             >
               <div className="text-xl sm:text-3xl font-bold bg-linear-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent mb-1">
                 {stat.value}

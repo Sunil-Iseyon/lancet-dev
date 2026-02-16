@@ -115,7 +115,7 @@ export default function AnimatedServicesGrid({
                         <div className="relative w-full h-40 rounded-lg overflow-hidden">
                           <ImageSkeleton 
                             src={service.image} 
-                            alt={service.title}
+                            alt={`${service.title} - business intelligence and data analytics consulting service by Lancet Software India`}
                             fill
                             className="group-hover:scale-110 transition-transform duration-300"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

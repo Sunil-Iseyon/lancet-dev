@@ -128,7 +128,7 @@ export default function ContactPage() {
         <Image src="/lancetBg.webp" width={1920} height={1080} alt="Lancet Software India office background image for contact and consulting enquiries" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0  z-10" />
         <div className="mx-auto text-center relative z-20">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Get In Touch</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Contact Our Business Intelligence &amp; Data Analytics Team</h1>
           <p className="text-xl text-white/90">
             Organizations with strong data governance and analytics programs deliver faster decisions across business units (<a className="underline" href="https://www.mckinsey.com/capabilities/operations/our-insights/the-data-driven-enterprise-of-2025" target="_blank" rel="nofollow noopener">McKinsey</a>).
           </p>
@@ -197,9 +197,10 @@ export default function ContactPage() {
                     </div>
                   )}
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Name</label>
+                    <label htmlFor="contact-name" className="block text-sm font-semibold mb-2">Name</label>
                     <input
                       type="text"
+                      id="contact-name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
@@ -210,9 +211,10 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Email</label>
+                    <label htmlFor="contact-email" className="block text-sm font-semibold mb-2">Email</label>
                     <input
                       type="email"
+                      id="contact-email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
@@ -223,9 +225,10 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Company</label>
+                    <label htmlFor="contact-company" className="block text-sm font-semibold mb-2">Company</label>
                     <input
                       type="text"
+                      id="contact-company"
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
@@ -235,8 +238,9 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2">Message</label>
+                    <label htmlFor="contact-message" className="block text-sm font-semibold mb-2">Message</label>
                     <textarea
+                      id="contact-message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
@@ -330,9 +334,9 @@ export default function ContactPage() {
                   </Link>
                   .
                 </p>
-                <blockquote className="border-l-4 border-primary pl-4 mt-4 text-sm text-foreground/80">
-                  <p>"The goal is to turn data into information, and information into insight."</p>
-                  <footer>— Commonly referenced analytics principle</footer>
+                <blockquote className="border-l-4 border-primary pl-4 mt-4 text-sm text-foreground/80" cite="https://en.wikipedia.org/wiki/Carly_Fiorina">
+                  <p>&ldquo;The goal is to turn data into information, and information into insight.&rdquo;</p>
+                  <footer>&mdash; Carly Fiorina, former CEO of Hewlett-Packard</footer>
                 </blockquote>
               </div>
             </div>
@@ -385,8 +389,10 @@ export default function ContactPage() {
         headline="Contact Lancet Software India for Business Intelligence and Data Analytics Services"
         description="Contact Lancet Software India to discuss business intelligence, analytics, and data engineering requirements with our consulting team."
         datePublished="2026-02-13"
-        dateModified="2026-02-13"
-        author="Lancet Software India"
+        dateModified="2026-02-16"
+        author="Thomas Niccum"
+        authorUrl="https://www.lancetindia.com/about/team"
+        authorSameAs={["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"]}
         url={pageUrl}
       />
 

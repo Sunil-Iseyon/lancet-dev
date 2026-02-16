@@ -228,12 +228,12 @@ export default function Navbar() {
               </button>
               {isConsultingOpen && (
                 <div className="absolute left-0 mt-0 max-w-max bg-card border border-border rounded-lg shadow-xl animate-slide-in-up py-2">
-                  {/* Business Intelligent with submenu */}
+                  {/* Business Intelligence with submenu */}
                   <div className="relative group"
                     onMouseEnter={() => setIsBIOpen(true)}
                     onMouseLeave={() => setIsBIOpen(false)}>
                     <button className="w-full text-left px-4 py-2 text-base font-medium text-foreground hover:bg-primary/10 transition-colors flex items-center justify-between">
-                      Business Intelligent
+                      Business Intelligence
                       <ChevronDown size={16} className={`transition-transform ${isBIOpen ? "rotate-180" : ""}`} />
                     </button>
                     {isBIOpen && (
@@ -454,10 +454,10 @@ export default function Navbar() {
               </button>
               {isConsultingOpen && (
                 <div className="mt-2 space-y-1">
-                  {/* Business Intelligent with submenu */}
+                  {/* Business Intelligence with submenu */}
                   <div>
                     <button onClick={() => setIsBIOpen(!isBIOpen)} className="w-full text-left px-4 py-2 text-base font-medium text-foreground hover:bg-primary/10 transition-colors flex items-center justify-between">
-                      Business Intelligent
+                      Business Intelligence
                       <ChevronDown size={16} className={`transition-transform ${isBIOpen ? "rotate-180" : ""}`} />
                     </button>
                     {isBIOpen && (

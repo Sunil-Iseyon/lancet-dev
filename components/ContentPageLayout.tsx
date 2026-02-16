@@ -79,8 +79,9 @@ export default function ContentPageLayout({
           >
             <h1 id="service-page-title" className="text-4xl sm:text-5xl font-bold mb-4 text-balance bg-linear-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">{title}</h1>
             {subtitle && <p className="text-xl text-muted-foreground">{subtitle}</p>}
+            {!subtitle && <p className="text-xl text-muted-foreground">Expert {title} consulting, implementation, and support services from Lancet Software India.</p>}
             <p className="text-sm text-muted-foreground mt-2">By <a className="text-primary hover:underline" href="/about/team">Lancet Software India Team</a></p>
-            <p className="text-sm text-muted-foreground mt-4">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
+            <p className="text-sm text-muted-foreground mt-4">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-16">February 16, 2026</time></p>
           </motion.header>
 
           <motion.figure 
@@ -90,13 +91,13 @@ export default function ContentPageLayout({
             transition={{ duration: 1, ease: "easeOut" }}
             className="md:col-span-3 rounded-lg overflow-hidden shadow-sm"
           >
-            <img src={image || "/placeholder.svg"} alt={`${title} service illustration for Lancet Software India consulting delivery`} className="w-full h-full" />
+            <img src={image || "/placeholder.svg"} alt={`${title} - business intelligence and data analytics consulting service illustration by Lancet Software India`} className="w-full h-full" loading="lazy" />
           </motion.figure>
         </section>
 
         <section id="service-overview" className="mb-10" aria-labelledby="industry-benchmarks-heading">
           <h2 id="industry-benchmarks-heading" className="text-2xl font-bold mb-3 text-foreground">Industry Benchmarks</h2>
-          <p className="text-lg text-foreground mb-4">Industry data shows digital commerce, analytics, and AI programs continue to accelerate investment and delivery expectations. Consequently, delivery teams are expected to ship outcomes faster with measurable governance.</p>
+          <p className="text-lg text-foreground mb-4">Industry data shows digital commerce, analytics, and <abbr title="Artificial Intelligence">AI</abbr> programs continue to accelerate investment and delivery expectations. Consequently, delivery teams are expected to ship outcomes faster with measurable governance.</p>
           <ul className="list-disc pl-6 space-y-2 text-foreground">
             {benchmarkLinks.map((item) => (
               <li key={item.href}>
@@ -104,19 +105,19 @@ export default function ContentPageLayout({
               </li>
             ))}
           </ul>
-          <blockquote className="border-l-4 border-primary pl-4 mt-6 text-muted-foreground">
-            <p>"Information is the oil of the 21st century, and analytics is the combustion engine."</p>
-            <footer>— Peter Sondergaard, former Gartner executive</footer>
+          <blockquote className="border-l-4 border-primary pl-4 mt-6 text-muted-foreground" cite="https://en.wikipedia.org/wiki/Peter_Sondergaard">
+            <p>&ldquo;Information is the oil of the 21st century, and analytics is the combustion engine.&rdquo;</p>
+            <footer>&mdash; Peter Sondergaard, former Gartner Research executive vice president</footer>
           </blockquote>
           <blockquote className="border-l-4 border-primary pl-4 mt-4 text-muted-foreground">
-            <p>"The core advantage of data is that it tells you something about the world that you didn’t know before."</p>
-            <footer>— Hilary Mason, Fast Forward Labs founder</footer>
+            <p>&ldquo;The core advantage of data is that it tells you something about the world that you didn&rsquo;t know before.&rdquo;</p>
+            <footer>&mdash; Hilary Mason, data scientist and founder of Fast Forward Labs</footer>
           </blockquote>
         </section>
 
         <section className="mb-12" aria-labelledby="evidence-methodology-heading">
           <h2 id="evidence-methodology-heading" className="text-2xl font-bold mb-3 text-foreground">Evidence, References, and Methodology</h2>
-          <p className="text-foreground mb-4">Furthermore, Lancet Software India validates delivery outcomes through internal project benchmarking and post-implementation reviews.</p>
+          <p className="text-foreground mb-4">Lancet Software India validates delivery outcomes through internal project benchmarking, post-implementation reviews, and alignment with <abbr title="National Institute of Standards and Technology">NIST</abbr> data governance guidance.</p>
           <div className="overflow-x-auto">
             <table className="w-full text-left border border-border rounded-lg">
               <thead className="bg-muted/40">

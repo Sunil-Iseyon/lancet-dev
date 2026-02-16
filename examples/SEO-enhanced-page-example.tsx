@@ -7,7 +7,6 @@
 
 import React from 'react'
 import BreadcrumbSchema, { ServiceSchema } from '@/components/StructuredData'
-import { FAQSection } from '@/components/FAQSchema'
 import { 
   StatsGrid, 
   Citation, 
@@ -275,11 +274,17 @@ export default function PowerBIServiceExample() {
         </section>
 
         {/* 6. FAQ Section with Schema */}
-        <FAQSection 
-          title="Frequently Asked Questions"
-          faqs={faqs}
-          url="https://www.lancetindia.com/consulting/business-intelligent/powerbi"
-        />
+        <section className="px-4 md:px-28 py-16">
+          <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <details key={i} className="border rounded-lg p-4">
+                <summary className="font-semibold cursor-pointer">{faq.question}</summary>
+                <p className="mt-2 text-muted-foreground">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
 
         {/* CTA Section */}
         <section className="px-4 md:px-28 py-16 bg-primary text-primary-foreground text-center">

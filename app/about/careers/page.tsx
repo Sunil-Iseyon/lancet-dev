@@ -318,7 +318,7 @@ export default function CareerPage() {
             ). Lancet Software India builds careers through real client delivery in business intelligence and data analytics.
           </p>
           <p className="text-sm text-muted-foreground">By <a className="text-primary hover:underline" href="/about/team">Lancet Software India Team</a></p>
-          <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
+          <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-16">February 16, 2026</time></p>
           <div className="flex flex-wrap gap-4 justify-center mt-8">
             <button
               onClick={(e) => handleAnchorClick( "openings")}
@@ -627,8 +627,10 @@ export default function CareerPage() {
         headline="Build Your Career in Business Intelligence & Data Analytics with Lancet Software India"
         description="Build careers in Business Intelligence and Data Analytics at Lancet Software India with enterprise projects, structured learning, and long-term growth opportunities."
         datePublished="2026-02-13"
-        dateModified="2026-02-13"
-        author="Lancet Software India"
+        dateModified="2026-02-16"
+        author="Thomas Niccum"
+        authorUrl="https://www.lancetindia.com/about/team"
+        authorSameAs={["https://www.linkedin.com/company/lancet-software-india-pvt-ltd"]}
         url={pageUrl}
       />
 
