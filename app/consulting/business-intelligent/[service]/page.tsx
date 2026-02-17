@@ -21,7 +21,9 @@ export async function generateMetadata({
   }
 
   const title = `${pageData.title} - Business Intelligence Consulting | Lancet Software India`
-  const description = pageData.subtitle || `Expert ${pageData.title} consulting services. Transform your data with professional business intelligence solutions from Lancet Software India.`
+  const description = pageData.subtitle 
+    ? `${pageData.title} business intelligence consulting: ${pageData.subtitle}. Expert ${pageData.title} implementation, optimization, and support from Lancet Software India.`
+    : `Expert ${pageData.title} business intelligence consulting services. Transform your data with professional ${pageData.title} solutions from Lancet Software India.`
   const url = `https://www.lancetindia.com/consulting/business-intelligent/${service}`
 
   return {
@@ -83,8 +85,12 @@ export default async function BusinessIntelligentServicePage({
   const pageUrl = `https://www.lancetindia.com/consulting/business-intelligent/${service}`
   const faqItems = [
     {
+      question: `What is ${pageData.title} consulting?`,
+      answer: `${pageData.title} consulting is a professional service where Lancet Software India helps organizations plan, implement, and optimize ${pageData.title} for business intelligence and data analytics.`
+    },
+    {
       question: `What business outcomes can ${pageData.title} consulting deliver?`,
-      answer: `Lancet Software India's ${pageData.title} consulting focuses on faster reporting, stronger data quality, and better executive decision support.`
+      answer: `Lancet Software India's ${pageData.title} consulting focuses on faster reporting, stronger data quality, and better executive decision support. Clients have typically reported 20–40% improvement in reporting speed, though results depend on data maturity and scope.`
     },
     {
       question: `Does Lancet support end-to-end ${pageData.title} implementation?`,
@@ -93,6 +99,14 @@ export default async function BusinessIntelligentServicePage({
     {
       question: `Can ${pageData.title} be integrated with existing enterprise systems?`,
       answer: `Yes. Lancet Software India integrates ${pageData.title} with data warehouses, cloud platforms, CRMs, ERPs, and operational data sources.`
+    },
+    {
+      question: `How long does a ${pageData.title} implementation take?`,
+      answer: `A typical ${pageData.title} implementation takes 6–12 weeks for an initial phase, depending on data complexity and organizational readiness. Lancet uses a phased rollout approach.`
+    },
+    {
+      question: `What industries does Lancet serve with ${pageData.title}?`,
+      answer: `Lancet Software India serves finance, healthcare, retail, manufacturing, and technology sectors with ${pageData.title} consulting and implementation services.`
     },
   ]
 

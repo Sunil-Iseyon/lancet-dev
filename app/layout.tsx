@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Lancet Software India"
   },
   description:
-    "Lancet Software India provides business intelligence and data analytics solutions. Since 1997, delivering BI consulting, data engineering, and enterprise analytics across Power BI, Tableau, and Databricks. 800+ projects completed with 95% client satisfaction.",
+    "Organizing data is an art — Lancet Software India provides business intelligence and data analytics solutions. Since 1997, delivering BI consulting, data engineering, and enterprise analytics across Power BI, Tableau, and Databricks. 800+ projects completed with 95% client satisfaction.",
   keywords: [
     "business intelligence",
     "data analytics",
@@ -147,6 +147,11 @@ export default function RootLayout({
         "@type": "ReadAction",
         "name": "Read BI & Analytics Blog",
         "target": "https://www.lancetindia.com/blog"
+      },
+      {
+        "@type": "DownloadAction",
+        "name": "Download BI Readiness Checklist",
+        "target": "https://www.lancetindia.com/resources/bi-readiness-checklist.txt"
       }
     ]
   };

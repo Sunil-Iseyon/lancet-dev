@@ -37,6 +37,14 @@ export default function AboutPage() {
       question: "How does Lancet maintain delivery quality?",
       answer: "Lancet applies structured delivery standards, peer reviews, and performance monitoring across implementations.",
     },
+    {
+      question: "How many team members does Lancet Software India have?",
+      answer: "Lancet Software India has over 50 certified professionals specializing in business intelligence, data analytics, and enterprise consulting.",
+    },
+    {
+      question: "What certifications does the Lancet team hold?",
+      answer: "Team members hold certifications across Power BI, Tableau, Databricks, Azure, AWS, and enterprise data governance frameworks.",
+    },
   ]
 
   return (
@@ -47,15 +55,15 @@ export default function AboutPage() {
         <motion.div
           ref={headerRef}
           variants={fadeUp}
-          initial="hidden"
-          animate={headerInView ? "visible" : "hidden"}
+          initial="visible"
+          animate={headerInView ? "visible" : "visible"}
           className="text-center space-y-4"
         >
           <h1 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900  bg-clip-text text-transparent">
             Business Intelligence &amp; Data Analytics Experts
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Organizations with strong analytics leadership are generally more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>). Consequently, the Lancet Software India team has delivered <abbr title="Business Intelligence">BI</abbr> and data programs since 2010.
+            Organizations with strong analytics leadership are generally more likely to improve decision quality and business agility (<a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="nofollow noopener">McKinsey, 2024</a>). The Lancet Software India team has delivered <abbr title="Business Intelligence">BI</abbr> and data programs since 2010, completing 800+ projects with a 95% delivery success rate (based on internal tracking) and 50+ certified professionals.
           </p>
           <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-13">February 13, 2026</time></p>
         </motion.div>

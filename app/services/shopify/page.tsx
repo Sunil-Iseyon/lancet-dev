@@ -8,8 +8,8 @@ const pageUrl = "https://www.lancetindia.com/services/shopify"
 const publishedDate = "2026-02-13"
 
 export const metadata: Metadata = {
-  title: 'Shopify Solutions: Custom Development & Integrations | Lancet Software India',
-  description: 'Shopify solutions from Lancet Software India: custom Shopify development, store design, payment integrations, and managed e-commerce support. Build and scale your Shopify store with expert consulting.',
+  title: 'Shopify Solutions - Custom Development & Integrations | Lancet Software India',
+  description: 'Shopify Solutions from Lancet Software India: custom Shopify development, store design, payment integrations, and managed e-commerce support. Build and scale your Shopify store with expert Shopify Solutions consulting.',
   openGraph: {
     title: 'Shopify Solutions: Custom Development & Integrations',
     description: 'Shopify business intelligence and e-commerce solutions with custom development and integrations.',

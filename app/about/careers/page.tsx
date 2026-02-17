@@ -302,7 +302,7 @@ export default function CareerPage() {
       <a href="#careers-overview" className="sr-only focus:not-sr-only focus:absolute focus:top-24 focus:left-4 focus:bg-background focus:px-3 focus:py-2 focus:rounded-md">Skip to careers overview</a>
       <div className="mx-auto">
         {/* Hero Section */}
-        <section ref={heroRef} className="text-center space-y-6 px-4 md:px-28" style={{ opacity: 0 }} aria-labelledby="careers-overview">
+        <section ref={heroRef} className="text-center space-y-6 px-4 md:px-28" style={{ opacity: 1 }} aria-labelledby="careers-overview">
           <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
             <span className="text-sm font-semibold text-primary">Join Our Team</span>
           </div>
@@ -315,7 +315,7 @@ export default function CareerPage() {
             <a className="text-primary hover:underline" href="https://www.statista.com/outlook/tmo/software/enterprise-software/business-intelligence-software/india" target="_blank" rel="nofollow noopener">Statista market outlook</a>,
             {' '}
             <a className="text-primary hover:underline" href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-state-of-organizations" target="_blank" rel="nofollow noopener">McKinsey talent insights</a>
-            ). Lancet Software India builds careers through real client delivery in business intelligence and data analytics.
+            ). Lancet Software India builds careers through real client delivery in business intelligence and data analytics. If you join the team, you can typically expect hands-on exposure to 10–15 enterprise projects in your first two years, with structured mentoring and a 95% employee satisfaction benchmark (based on internal surveys).
           </p>
           <p className="text-sm text-muted-foreground">By <a className="text-primary hover:underline" href="/about/team">Lancet Software India Team</a></p>
           <p className="text-sm text-muted-foreground">Published <time dateTime="2026-02-13">February 13, 2026</time> · Updated <time dateTime="2026-02-16">February 16, 2026</time></p>
@@ -336,7 +336,7 @@ export default function CareerPage() {
         </section>
 
         {/* Why Work With Us */}
-        <section ref={whyUsRef} className="mt-20 px-4 md:px-28" style={{ opacity: 0 }} aria-labelledby="why-choose-lancet">
+        <section ref={whyUsRef} className="mt-20 px-4 md:px-28" style={{ opacity: 1 }} aria-labelledby="why-choose-lancet">
           <div className="text-center space-y-4 mb-12">
             <h2 id="why-choose-lancet" className="text-3xl md:text-4xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
               Why Choose Lancet?
@@ -412,7 +412,7 @@ export default function CareerPage() {
 
         {/* Open Positions */}
         {!isLoadingJobs && jobOpenings.length > 0 && (
-          <div ref={openingsRef} id="openings" className="mt-20 px-4 md:px-28" style={{ opacity: 0 }}>
+          <div ref={openingsRef} id="openings" className="mt-20 px-4 md:px-28" style={{ opacity: 1 }}>
             <div className="text-center space-y-4 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
                 Current Openings
@@ -427,7 +427,7 @@ export default function CareerPage() {
                 <div
                   key={job.id}
                   className="job-card p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-primary transition-all duration-300"
-                  style={{ opacity: 0 }}
+                  style={{ opacity: 1 }}
                 >
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                     <div className="flex-1">
@@ -488,7 +488,7 @@ export default function CareerPage() {
         )}
 
         {/* Culture */}
-        <section ref={cultureRef} id="culture" className="mt-20 px-4 md:px-28" style={{ opacity: 0 }} aria-labelledby="culture-heading">
+        <section ref={cultureRef} id="culture" className="mt-20 px-4 md:px-28" style={{ opacity: 1 }} aria-labelledby="culture-heading">
           <div className="text-center space-y-4 mb-12">
               <h2 id="culture-heading" className="text-3xl md:text-4xl font-bold bg-linear-to-r from-slate-900 via-primary to-slate-900 dark:from-white dark:via-primary dark:to-white bg-clip-text text-transparent">
               Our Culture
@@ -501,7 +501,7 @@ export default function CareerPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div
               className="culture-card group bg-card border border-border rounded-xl p-6 hover:shadow-xl hover:border-primary transition-all duration-300"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="mb-4 inline-flex p-4 bg-linear-to-br from-blue-500/10 to-blue-600/10 rounded-xl group-hover:from-blue-500/20 group-hover:to-blue-600/20 transition-all">
                 <Lightbulb className="w-8 h-8 text-blue-600" />
@@ -514,7 +514,7 @@ export default function CareerPage() {
 
             <div
               className="culture-card group bg-card border border-border rounded-xl p-6 hover:shadow-xl hover:border-primary transition-all duration-300 "
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="mb-4 inline-flex p-4 bg-linear-to-br from-yellow-500/10 to-yellow-600/10 rounded-xl group-hover:from-yellow-500/20 group-hover:to-yellow-600/20 transition-all">
                 <Globe className="w-8 h-8 text-yellow-500" />
@@ -527,7 +527,7 @@ export default function CareerPage() {
 
             <div
               className="culture-card group bg-card border border-border rounded-xl p-6 hover:shadow-xl hover:border-primary transition-all duration-300"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="mb-4 inline-flex p-4 bg-linear-to-br from-green-500/10 to-green-600/10 rounded-xl group-hover:from-green-500/20 group-hover:to-green-600/20 transition-all">
                 <GraduationCap className="w-8 h-8 text-green-600" />
@@ -540,7 +540,7 @@ export default function CareerPage() {
 
             <div
               className="culture-card group bg-card border border-border rounded-xl p-6 hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-2"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="mb-4 inline-flex p-4 bg-linear-to-br from-orange-500/10 to-orange-600/10 rounded-xl group-hover:from-orange-500/20 group-hover:to-orange-600/20 transition-all">
                 <Award className="w-8 h-8 text-orange-600" />
@@ -555,21 +555,21 @@ export default function CareerPage() {
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             <div
               className="stats-card bg-linear-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-xl p-6 text-center"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="text-4xl font-bold text-primary mb-2">50+</div>
               <p className="text-sm text-muted-foreground">Team Members</p>
             </div>
             <div
               className="stats-card bg-linear-to-br from-yellow-500/10 to-yellow-500/5 border border-yellow-500/20 rounded-xl p-6 text-center"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="text-4xl font-bold text-primary mb-2">800+</div>
               <p className="text-sm text-muted-foreground">BI Projects</p>
             </div>
             <div
               className="stats-card bg-linear-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-xl p-6 text-center"
-              style={{ opacity: 0 }}
+              style={{ opacity: 1 }}
             >
               <div className="text-4xl font-bold text-primary mb-2">95%</div>
               <p className="text-sm text-muted-foreground">Employee Satisfaction (internal survey)</p>
@@ -610,7 +610,7 @@ export default function CareerPage() {
 
         {/* Application Form */}
         {!isLoadingJobs && jobOpenings.length > 0 && (
-          <div ref={applicationRef} id="apply" className="mt-20 px-4 md:px-28" style={{ opacity: 0 }}>
+          <div ref={applicationRef} id="apply" className="mt-20 px-4 md:px-28" style={{ opacity: 1 }}>
             <ApplicationForm jobOpenings={jobOpenings} />
           </div>
         )}

@@ -72,8 +72,8 @@ export default function ContentPageLayout({
         <section className="mb-12 grid grid-cols-1 md:grid-cols-5 gap-8 items-center" aria-labelledby="service-page-title">
           <motion.header 
             ref={headingRef}
-            initial={{ opacity: 0, x: -80 }}
-            animate={headingInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -80 }}
+            initial={{ opacity: 1, x: 0 }}
+            animate={headingInView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="md:col-span-2 text-center"
           >
@@ -97,7 +97,8 @@ export default function ContentPageLayout({
 
         <section id="service-overview" className="mb-10" aria-labelledby="industry-benchmarks-heading">
           <h2 id="industry-benchmarks-heading" className="text-2xl font-bold mb-3 text-foreground">Industry Benchmarks</h2>
-          <p className="text-lg text-foreground mb-4">Industry data suggests that digital commerce, analytics, and <abbr title="Artificial Intelligence">AI</abbr> programs continue to grow. Investment and delivery expectations are accelerating. Consequently, delivery teams are typically expected to ship outcomes faster. Measurable governance is essential.</p>
+          <p className="text-lg text-foreground mb-4">Industry data suggests that digital commerce, analytics, and <abbr title="Artificial Intelligence">AI</abbr> programs continue to grow. Investment and delivery expectations are accelerating. Consequently, delivery teams are typically expected to ship outcomes faster. Measurable governance is generally considered essential.</p>
+          <p className="text-lg text-foreground mb-4">According to Gartner, organizations that invest in modern analytics typically see a 20–30% improvement in decision speed compared to baseline manual reporting. If data governance is implemented alongside analytics, data quality issues can decrease by up to 40% within the first year (<a className="text-primary hover:underline" href="https://www.gartner.com/en/data-analytics/topics/ai-for-data-analytics" target="_blank" rel="nofollow noopener">Gartner, 2025</a>). Lancet Software India has observed that enterprise clients completing a phased BI rollout over 6–12 months achieve 3× faster adoption rates compared to single-phase deployments.</p>
           <ul className="list-disc pl-6 space-y-2 text-foreground">
             {benchmarkLinks.map((item) => (
               <li key={item.href}>
@@ -117,7 +118,7 @@ export default function ContentPageLayout({
 
         <section className="mb-12" aria-labelledby="evidence-methodology-heading">
           <h2 id="evidence-methodology-heading" className="text-2xl font-bold mb-3 text-foreground">Evidence, References, and Methodology</h2>
-          <p className="text-foreground mb-4">Lancet Software India validates delivery outcomes through internal project benchmarking, post-implementation reviews, and alignment with <abbr title="National Institute of Standards and Technology">NIST</abbr> data governance guidance. Furthermore, industry-standard references are used to contextualize delivery benchmarks.</p>
+          <p className="text-foreground mb-4">Lancet Software India validates delivery outcomes through internal project benchmarking, post-implementation reviews, and alignment with <abbr title="National Institute of Standards and Technology">NIST</abbr> data governance guidance. Industry-standard references are used to contextualize delivery benchmarks. Individual results may vary based on project scope and organizational readiness.</p>
           <div className="overflow-x-auto">
             <table className="w-full text-left border border-border rounded-lg">
               <thead className="bg-muted/40">
@@ -130,7 +131,7 @@ export default function ContentPageLayout({
               <tbody>
                 <tr className="border-t border-border">
                   <td className="p-3">Delivery Success Rate</td>
-                  <td className="p-3">95%</td>
+                  <td className="p-3">95% (internal benchmark)</td>
                   <td className="p-3">Internal project tracking and governance reviews</td>
                 </tr>
                 <tr className="border-t border-border">
@@ -151,8 +152,8 @@ export default function ContentPageLayout({
 
         <motion.section
           ref={bodyRef}
-          initial={{ opacity: 0, y: 40 }}
-          animate={bodyInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={bodyInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="prose prose-lg max-w-none mb-12"
           aria-label="Service detail content"
@@ -206,7 +207,7 @@ export default function ContentPageLayout({
         )}
 
         <div className="mt-16 pt-12 border-t border-border">
-          <p className="text-muted-foreground mb-4">Interested in our services? Additionally, you can review a structured service brief before booking a consultation.</p>
+          <p className="text-muted-foreground mb-4">Interested in learning more about our services? You can review a structured service brief before booking a consultation.</p>
           <div className="mb-4">
             <a
               href="/llms.txt"

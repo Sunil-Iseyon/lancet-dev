@@ -21,7 +21,9 @@ export async function generateMetadata({
   }
 
   const title = `${pageData.title} - Data Services | Lancet Software India`
-  const description = pageData.subtitle || `Professional ${pageData.title} data services. Enterprise-grade data solutions from Lancet Software India since 1997.`
+  const description = pageData.subtitle
+    ? `${pageData.title} data services: ${pageData.subtitle}. Professional ${pageData.title} implementation, integration, and support from Lancet Software India.`
+    : `Professional ${pageData.title} data services. Enterprise-grade ${pageData.title} solutions from Lancet Software India since 1997.`
   const url = `https://www.lancetindia.com/consulting/data-services/${service}`
 
   return {

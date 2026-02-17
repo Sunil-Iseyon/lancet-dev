@@ -1,0 +1,60 @@
+Business Intelligence Readiness Checklist
+==========================================
+Prepared by Lancet Software India | www.lancetindia.com
+Last Updated: February 2026
+
+This checklist helps organizations assess their readiness for a business intelligence
+and data analytics implementation. Use it to identify gaps before starting a BI program.
+
+1. DATA FOUNDATION
+   [ ] Data sources identified and catalogued
+   [ ] Data quality assessment completed
+   [ ] Data governance policies defined
+   [ ] Master data management strategy in place
+   [ ] Data retention and archival policies documented
+
+2. INFRASTRUCTURE
+   [ ] Cloud or on-premise hosting decision made
+   [ ] Database architecture reviewed
+   [ ] ETL (Extract, Transform, Load) pipeline requirements defined
+   [ ] Network and security requirements documented
+   [ ] Disaster recovery plan in place
+
+3. ANALYTICS PLATFORM
+   [ ] BI platform selected (Power BI, Tableau, Databricks, etc.)
+   [ ] Licensing model evaluated
+   [ ] Integration points with existing systems identified
+   [ ] Performance benchmarks defined
+   [ ] Mobile and web access requirements specified
+
+4. ORGANIZATIONAL READINESS
+   [ ] Executive sponsor identified
+   [ ] BI team roles and responsibilities defined
+   [ ] Data literacy training plan created
+   [ ] Change management strategy documented
+   [ ] Success metrics and KPIs defined
+
+5. GOVERNANCE & COMPLIANCE
+   [ ] Data privacy requirements reviewed (GDPR, CCPA, etc.)
+   [ ] Access control and row-level security planned
+   [ ] Audit trail requirements documented
+   [ ] Content certification process defined
+   [ ] Regulatory compliance checklist completed
+
+6. DEPLOYMENT & SUPPORT
+   [ ] Phased rollout plan created
+   [ ] User acceptance testing (UAT) plan defined
+   [ ] Training schedule for end users established
+   [ ] 24/7 support model evaluated
+   [ ] Post-launch optimization plan defined
+
+SCORING:
+- 25-30 items checked: Ready for implementation
+- 15-24 items checked: Address gaps before starting
+- Below 15: Foundational work needed first
+
+Contact Lancet Software India for a complimentary BI readiness assessment:
+Email: info@lancetindia.com
+Web: https://www.lancetindia.com/contact
+
+© 2026 Lancet Software India. Licensed under CC BY 4.0.

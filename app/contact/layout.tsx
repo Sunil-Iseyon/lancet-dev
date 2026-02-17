@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import type React from "react"
 
 export const metadata: Metadata = {
-  title: "Contact Business Intelligence & Data Analytics Team",
+  title: "Contact Our Business Intelligence & Data Analytics Team",
   description:
-    "Contact Lancet Software India for business intelligence and data analytics consulting. Discuss BI strategy, data engineering, and enterprise analytics requirements with certified professionals.",
+    "Contact our business intelligence and data analytics team at Lancet Software India. Discuss BI strategy, data engineering, and enterprise analytics requirements with certified professionals.",
   alternates: {
     canonical: "https://www.lancetindia.com/contact",
     languages: {
@@ -13,17 +13,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact Lancet Software India | BI & Data Analytics",
+    title: "Contact Our Business Intelligence & Data Analytics Team | Lancet Software India",
     description:
-      "Get in touch with Lancet Software India for BI, data analytics, and enterprise consulting enquiries.",
+      "Contact our business intelligence and data analytics team at Lancet Software India for BI consulting and enterprise analytics enquiries.",
     url: "https://www.lancetindia.com/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Lancet Software India",
+    title: "Contact Our Business Intelligence & Data Analytics Team | Lancet Software India",
     description:
-      "Connect with our BI and data analytics consulting team.",
+      "Contact our business intelligence and data analytics team at Lancet Software India.",
   },
 }
 

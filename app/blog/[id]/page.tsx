@@ -21,7 +21,7 @@ export async function generateMetadata({
   }
 
   const title = `${post.title} | Lancet Software India Blog`
-  const description = post.excerpt || `${post.title}: practical AI conversation and prompt engineering strategies from Lancet Software India Blog.`
+  const description = post.excerpt || `${post.title}: insights and practical strategies from Lancet Software India Blog covering business intelligence, data analytics, and enterprise consulting.`
   const url = `https://www.lancetindia.com/blog/${id}`
 
   return {
